@@ -1,0 +1,51 @@
+[ 2016-12-08T13:31:46+08:00 ] 127.0.0.1 /shop/index.php/Admin/Manager/showlist
+ERR: 非法操作:showlist
+
+[ 2016-12-08T13:34:16+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/showlist
+ERR: 无法加载控制器:Role
+
+[ 2016-12-08T13:52:17+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/showlist
+ERR: Syntax Error in template "D:/wamp64/www/tp/shop/Admin/View\Role\showlist.html"  on line 35 "&lt;td class=&quot;center&quot;&gt;&lt;a href=&quot;{$smarty.const.__CONTROLLER__/}&quot;&gt;分配权限&lt;/a&gt; | &lt;a href=&quot;&quot;&gt;更新&lt;/a&gt; | &lt;a href=&quot;&quot;&gt;删除&lt;/a&gt;&lt;/td&gt;"  - Unexpected "}"
+
+[ 2016-12-08T13:52:59+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/distrubute
+ERR: 非法操作:distrubute
+
+[ 2016-12-08T13:54:07+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/distribute
+ERR: 模板不存在:D:/wamp64/www/tp/shop/Admin/View/Role/distribute.html
+
+[ 2016-12-08T13:58:54+08:00 ] 127.0.0.1 /shop/index.php/Admin/User/comment
+ERR: 无法加载控制器:User
+
+[ 2016-12-08T13:58:58+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/distribute
+ERR: Syntax Error in template "D:/wamp64/www/tp/shop/Admin/View\Role\distribute.html"  on line 2 "{block name=&quot;section&quot;}" unmatched {block} {/block} pairs
+
+[ 2016-12-08T14:36:17+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/index.html
+ERR: 非法操作:index
+
+[ 2016-12-08T15:02:25+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/distribute
+ERR: 参数错误或者未定义:role_id
+
+[ 2016-12-08T15:02:35+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/distribute
+ERR: 参数错误或者未定义:role_id
+
+[ 2016-12-08T15:02:38+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/distribute/
+ERR: 参数错误或者未定义:role_id
+
+[ 2016-12-08T15:03:07+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/distribute/
+ERR: 参数错误或者未定义:role_id
+
+[ 2016-12-08T15:08:31+08:00 ] 127.0.0.1 /shop/index.php/Admin/Order/showlist
+ERR: 无法加载控制器:Order
+
+[ 2016-12-08T15:08:49+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/search
+ERR: 非法操作:search
+
+[ 2016-12-08T15:09:49+08:00 ] 127.0.0.1 /shop/index.php/Admin/Manager/showlist
+ERR: 非法操作:showlist
+
+[ 2016-12-08T15:10:05+08:00 ] 127.0.0.1 /shop/index.php/Admin/Auth/showlist
+ERR: 无法加载控制器:Auth
+
+[ 2016-12-08T16:07:39+08:00 ] 127.0.0.1 /shop/index.php/Admin/Role/distribute/role_id/
+ERR: 参数错误或者未定义:role_id
+

@@ -1,0 +1,49 @@
+{extends file="base.html"}
+{block name="section"}
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">分配权限</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    分配权限（{$role_info['role_name']}）
+                </div>
+                <div class="panel-body">
+                    <div class="dataTable_wrapper">
+                        <form action="{$smarty.const.__SELF__}" method="post">
+                        <table class="table table-bordered" id="dataTables-example">
+                            <tbody>
+                                {foreach $auth_infoC as $k=>$v}
+                                <tr class="gradeU">
+                                    {*判断角色是否已经拥有该权限*}
+                                    <td style="width:200px;"><label> <input type="checkbox" name="auth_id[]" value="{$v.auth_id}" {if in_array($v.auth_id,$have_auth)}checked='checked'{/if}>{$v.auth_name}</label></td>
+                                    <td>
+                                    {foreach $auth_infoD as $kk=>$vv}
+                                    {if $vv.auth_pid == $v.auth_id}
+                                        <div style="width:200px;float:left"><label> <input type="checkbox" name="auth_id[]" value="{$vv.auth_id}" {if in_array($vv.auth_id,$have_auth)}checked='checked'{/if}>{$vv.auth_name}</label></div>
+                                    {/if}
+                                    {/foreach}
+                                    </td>
+                                </tr>
+                                {/foreach}
+                            </tbody>
+                        </table>
+                        <button type="submit" class="btn btn-info">分配权限</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{/block}
+{block name="table_js"}
+<script>
+    // alert($);
+</script>
+{/block}

@@ -1,0 +1,7 @@
+[ 2016-11-30T10:02:12+08:00 ] 127.0.0.1 /shop/index.php/admin/goods
+ERR: 非法操作:index
+
+[ 2016-11-30T10:11:21+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/showlist
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'form sw_goods order by goods_id desc limit 0,7' at line 1
+ [ SQL语句 ] : select * form sw_goods order by goods_id desc limit 0,7
+

@@ -1,0 +1,48 @@
+{extends file="base.html"}
+{block name="section"}
+       <div class="row">
+           <div class="col-lg-12">
+               <h1 class="page-header">添加权限</h1>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col-lg-12">
+               <div class="panel panel-default">
+                   <div class="panel-heading">
+                      添加权限
+                   </div>
+                   <div class="panel-body">
+                       <div class="row">
+                           <div class="col-lg-6">
+                               <form role="form" action="{$smarty.const.__SELF__}" method="post" enctype="multipart/form-data">
+                                   <div class="form-group">
+                                       <label>权限名称</label>
+                                       <input class="form-control" name="auth_name">
+                                   </div>
+                                   <div class="form-group">
+                                       <label>父级权限</label>
+                                       <select name="auth_pid" class="form-control">
+                                            <option value="0">请选择</option>
+                                            {foreach $auth_infoC as $k=>$v}
+                                            <option value="{$v.auth_id}">{$v.auth_name}</option>
+                                            {/foreach}
+                                        </select>
+                                   </div>
+                                   <div class="form-group">
+                                       <label>控制器</label>
+                                       <input class="form-control" name="auth_c">
+                                   </div>
+                                   <div class="form-group">
+                                       <label>操作方法</label>
+                                       <input class="form-control" name="auth_a">
+                                   </div>
+                                   <button type="submit" class="btn btn-default">添加</button>
+                                   <button type="reset" class="btn btn-default">重置</button>
+                               </form>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+{/block}

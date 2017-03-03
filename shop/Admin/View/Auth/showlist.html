@@ -1,0 +1,49 @@
+{extends file="base.html"}
+{block name="section"}
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">权限列表</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    权限列表 <a href="{$smarty.const.__CONTROLLER__}/tianjia"><button type="button" class="btn btn-danger btn-sm">添加权限</button></a>
+                </div>
+                <div class="panel-body">
+                    <div class="dataTable_wrapper">
+                        <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>权限名称</th>
+                                    <th>父级ID</th>
+                                    <th>权限控制器</th>
+                                    <th>操作方法</th>
+                                    <th>全路径</th>
+                                    <th>等级</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            {foreach $info as $k=>$v}
+                                <tr class="gradeU">
+                                    <td>{$v.auth_id}</td>
+                                    <td>{$v.auth_name|indent:$v.auth_level:' ----/'}</td>
+                                    <td>{$v.auth_pid}</td>
+                                    <td>{$v.auth_c}</td>
+                                    <td>{$v.auth_a}</td>
+                                    <td>{$v.auth_path}</td>
+                                    <td>{$v.auth_level}</td>
+                                    <td class="center"><a href="">修改</a> | <a href="">删除</a></td>
+                                </tr>
+                            {/foreach}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{/block}

@@ -1,0 +1,19 @@
+[ 2016-12-13T14:48:28+08:00 ] 127.0.0.1 /shop/index.php/Admin/Auth/tianjia
+ERR: 1366:Incorrect integer value: '' for column 'auth_level' at row 1
+ [ SQL语句 ] : update sw_auth set auth_path='50',auth_level='' where auth_id='50'
+
+[ 2016-12-13T16:11:45+08:00 ] 127.0.0.1 /shop/index.php/Admin/Order/showlist
+ERR: 无法加载控制器:Order
+
+[ 2016-12-13T16:11:48+08:00 ] 127.0.0.1 /shop/index.php/Admin/User/comment
+ERR: 无法加载控制器:User
+
+[ 2016-12-13T16:11:50+08:00 ] 127.0.0.1 /shop/index.php/Admin/Manager/showlist
+ERR: 非法操作:showlist
+
+[ 2016-12-13T16:11:52+08:00 ] 127.0.0.1 /shop/index.php/Admin/Manager/showlist
+ERR: 非法操作:showlist
+
+[ 2016-12-13T16:46:25+08:00 ] 127.0.0.1 /shop/index.php/Admin/User/comment
+ERR: 无法加载控制器:User
+
