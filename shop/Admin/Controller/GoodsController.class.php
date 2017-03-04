@@ -81,7 +81,6 @@ class GoodsController extends AdminController {
     }
 
     public function tianjia(){
-        $this->checkLogin();
         $goods = D('Goods');
         // 判断是提交表单还是显示表单
         if(!empty($_POST)){
@@ -162,13 +161,6 @@ class GoodsController extends AdminController {
             $this -> assign('auth_infoA',session('auth_infoA'));
             $this -> assign('auth_infoB',session('auth_infoB'));
             $this->display();
-        }
-    }
-    public function checkLogin(){
-        // 判断用户有没有登录
-        if (empty(session('admin_id'))) {
-            $this -> redirect('Manager/login','',2,'请先登录');
-            exit;
         }
     }
 }
