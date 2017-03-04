@@ -23,12 +23,12 @@ class ManagerController extends AdminController {
                     // session持久化用户信息,页面跳转
                     session('admin_name',$info['mg_name']);
                     session('admin_id',$info['mg_id']);
-                    $this -> redirect('Index/index');
+                    return show(1,'登陆成功',array('jumpUrl'=>'/index.php/admin/index'));
                 }else{
-                    echo '用户名或者密码错误';
+                    return show(0,'用户名或密码错误');
                 }
             }else{
-                echo '验证码错误';
+                return show(0,'验证码错误');
             }
         }else{
             $this->display();

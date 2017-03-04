@@ -1,28 +1,26 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2016-12-12 09:29:01
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-04 14:50:19
          compiled from "D:/wamp64/www/tp/shop/Admin/View\Index\index.html" */ ?>
-<?php /*%%SmartyHeaderCode:32164582ac73a3e8003-62422509%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2307458ba63ab955984-56381994%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'b85863970230c711f035b39a4cc88f28cf2c98c3' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\Index\\index.html',
-      1 => 1479198739,
+      1 => 1479198740,
       2 => 'file',
     ),
     '04201239d7d4eafa981430d32045b04705f85800' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\base.html',
-      1 => 1481272941,
+      1 => 1481272942,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '32164582ac73a3e8003-62422509',
+  'nocache_hash' => '2307458ba63ab955984-56381994',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_582ac73a40358',
   'variables' => 
   array (
     'auth_infoA' => 0,
@@ -31,8 +29,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'vv' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_58ba63abb5557',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_582ac73a40358')) {function content_582ac73a40358($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58ba63abb5557')) {function content_58ba63abb5557($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
 

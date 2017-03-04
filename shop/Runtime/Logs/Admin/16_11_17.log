@@ -1,9 +1,0 @@
-[ 2016-11-17T10:12:30+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/upd
-ERR: 参数错误或者未定义:goods_id
-
-[ 2016-11-17T10:53:31+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/upd.html
-ERR: 参数错误或者未定义:goods_id
-
-[ 2016-11-17T10:53:49+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/upd/0/2.html
-ERR: 参数错误或者未定义:goods_id
-

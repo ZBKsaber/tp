@@ -1,9 +1,0 @@
-[ 2016-11-16T10:58:59+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/__MODULE__/Goods/tianjia
-ERR: 非法操作:__MODULE__
-
-[ 2016-11-16T10:59:09+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/__MODULE__/Goods/tianjia
-ERR: 非法操作:__MODULE__
-
-[ 2016-11-16T14:21:24+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/index.html
-ERR: 非法操作:index
-
