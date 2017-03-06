@@ -1,13 +1,13 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 14:08:53
-         compiled from "D:/wamp64/www/tp/shop/Admin/View\Auth\tianjia.html" */ ?>
-<?php /*%%SmartyHeaderCode:2679558bcca43687627-65176942%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 11:03:55
+         compiled from "D:/wamp64/www/tp/shop/Admin/View\Index\index.html" */ ?>
+<?php /*%%SmartyHeaderCode:225058bcd19b2d0469-28529345%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '698514647b76168042a4e539fb26707dcf982e45' => 
+    'b85863970230c711f035b39a4cc88f28cf2c98c3' => 
     array (
-      0 => 'D:/wamp64/www/tp/shop/Admin/View\\Auth\\tianjia.html',
-      1 => 1488780532,
+      0 => 'D:/wamp64/www/tp/shop/Admin/View\\Index\\index.html',
+      1 => 1479198740,
       2 => 'file',
     ),
     '04201239d7d4eafa981430d32045b04705f85800' => 
@@ -17,12 +17,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2679558bcca43687627-65176942',
+  'nocache_hash' => '225058bcd19b2d0469-28529345',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_58bcca4390fdc',
   'variables' => 
   array (
     'auth_infoA' => 0,
@@ -31,8 +29,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'vv' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_58bcd19b4e38e',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58bcca4390fdc')) {function content_58bcca4390fdc($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58bcd19b4e38e')) {function content_58bcd19b4e38e($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -150,73 +150,7 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
             </div>
         </nav>
         <div id="page-wrapper">
-            
-       <div class="row">
-           <div class="col-lg-12">
-               <h1 class="page-header">添加权限</h1>
-           </div>
-       </div>
-       <div class="row">
-           <div class="col-lg-12">
-               <div class="panel panel-default">
-                   <div class="panel-heading">
-                      添加权限
-                   </div>
-                   <div class="panel-body">
-                       <div class="row">
-                           <div class="col-lg-6">
-                               <form role="form" action="<?php echo @__SELF__;?>
-" method="post" enctype="multipart/form-data">
-                                   <div class="form-group">
-                                       <label>权限名称</label>
-                                       <input class="form-control" name="auth_name" value="<?php echo $_smarty_tpl->tpl_vars['post']->value['auth_name'];?>
-">
-                                       <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['auth_name'];?>
-</span>
-                                   </div>
-                                   <div class="form-group">
-                                       <label>父级权限</label>
-                                       <select name="auth_pid" class="form-control">
-                                            <option value="0">顶级权限</option>
-                                            <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
- $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['auth_infoC']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
-foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
-$_smarty_tpl->tpl_vars['v']->_loop = true;
- $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
-?>
-                                            <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['auth_id'];?>
-"><?php echo $_smarty_tpl->tpl_vars['v']->value['auth_name'];?>
-</option>
-                                            <?php } ?>
-                                        </select>
-                                        <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['auth_pid'];?>
-</span>
-                                   </div>
-                                   <div class="form-group">
-                                       <label>控制器</label>
-                                       <input class="form-control" name="auth_c" value="<?php echo $_smarty_tpl->tpl_vars['post']->value['auth_c'];?>
-">
-                                        <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['auth_c'];?>
-</span>
-                                   </div>
-                                   <div class="form-group">
-                                       <label>操作方法</label>
-                                       <input class="form-control" name="auth_a" value="<?php echo $_smarty_tpl->tpl_vars['post']->value['auth_a'];?>
-">
-                                        <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['auth_c'];?>
-</span>
-                                   </div>
-                                   <button type="submit" class="btn btn-default">添加</button>
-                                   <button type="reset" class="btn btn-default">重置</button>
-                               </form>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-
+            后台首页
         </div>
     </div>
     <!-- jQuery -->

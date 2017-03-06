@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 10:31:20
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 11:59:13
          compiled from "D:/wamp64/www/tp/shop/Admin/View\Role\distribute.html" */ ?>
 <?php /*%%SmartyHeaderCode:1871658bcc9f8ceb103-82822985%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '224071629e491a9240d89f6772103ba8ac36b2cd' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\Role\\distribute.html',
-      1 => 1481252776,
+      1 => 1488772749,
       2 => 'file',
     ),
     '04201239d7d4eafa981430d32045b04705f85800' => 
@@ -21,6 +21,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_58bcc9f9092f3',
   'variables' => 
   array (
     'auth_infoA' => 0,
@@ -29,8 +31,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'vv' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_58bcc9f9092f3',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58bcc9f9092f3')) {function content_58bcc9f9092f3($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
@@ -226,7 +226,17 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
 
     
 <script>
-    // alert($);
+    $('.gradeU').find('td:first').find('input').click(function(){
+        // 获取当前input的状态
+        var status = $(this).is(':checked');
+        if (status == true) {
+            //选中
+            $(this).parents('.gradeU').find('input').prop('checked',true);
+        }else if(status == false){
+            // 没选中
+            $(this).parents('.gradeU').find('input').prop('checked',false);
+        }
+    });
 </script>
 
     <script src="<?php echo @BOWER_URL;?>

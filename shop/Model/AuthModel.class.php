@@ -4,6 +4,20 @@
     use Think\Model;
 
     class AuthModel extends Model{
+        // 是否批处理验证
+        protected $patchValidate    =   true;
+        // 设置用户注册验证规则
+        protected $_validate = array(
+            // 验证用户名 非空
+            //array(字段名称是表单域name属性来的,验证规则,错误提示,[验证条件,附加规则,验证时间]);
+            array('auth_name','require','权限名称不能为空'),
+            array('auth_name','','权限名称已经存在',0,'unique'),
+            array('auth_pid','number','父级权限必须为数字'),
+            array('auth_c','require','控制器名称不能为空'),
+            array('auth_c','english','控制器名称只能为英文'),
+            array('auth_a','require','方法名称不能为空'),
+            array('auth_a','english','方法名称只能为英文'),
+        );
         // 全路径 和 等级 二期制作
         // 权限信息整体维护
         public function saveData($four){

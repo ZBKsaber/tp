@@ -44,6 +44,16 @@
 {/block}
 {block name="table_js"}
 <script>
-    // alert($);
+    $('.gradeU').find('td:first').find('input').click(function(){
+        // 获取当前input的状态
+        var status = $(this).is(':checked');
+        if (status == true) {
+            //选中
+            $(this).parents('.gradeU').find('input').prop('checked',true);
+        }else if(status == false){
+            // 没选中
+            $(this).parents('.gradeU').find('input').prop('checked',false);
+        }
+    });
 </script>
 {/block}

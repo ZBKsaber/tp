@@ -115,6 +115,7 @@ class GoodsController extends AdminController {
             $goods = D('Goods');
             $data = $goods -> create();
             if ($data == false) {
+                $this -> assign('post',$_POST);
                 $this -> assign('errorInfo',$goods -> getError());
                 // 把获取的权限信息传递给模板
                 $this -> assign('auth_infoA',session('auth_infoA'));
@@ -159,6 +160,32 @@ class GoodsController extends AdminController {
                 $this -> assign('auth_infoA',session('auth_infoA'));
                 $this -> assign('auth_infoB',session('auth_infoB'));
                 return $this->display();
+            }
+            if($_FILES['goods_pic']['error']==0){
+                // 设置附件的存储位置
+                $cfg = array(
+                    'rootPath'      =>  './Public/Upload/', //保存根路径
+                );
+                $up = new \Think\Upload($cfg);
+                // 上传附件
+                // 如果附件上传成功,可以通过uploadOne的返回值查看到附件在服务器的存储情况
+                $z = $up -> uploadOne($_FILES['goods_pic']);
+                // 附件保存到数据库中,保存路径名
+                $bigpicname = $up->rootPath. $z['savepath'].$z['savename'];
+                $data['goods_big_img'] = substr($bigpicname,2); // 去除./
+
+                // 给上传好的图片制作缩略图
+                $im = new \Think\Image();
+                // 打开原图片
+                $im -> open($bigpicname);
+                // 为原图片制作缩略图
+                $im -> thumb(125,125); // 这个是等比例缩放的
+                // 把制作好的缩略图保存到服务器上
+                // 缩略图和原图在同一个目录位置
+                $smallpicname = $up->rootPath. $z['savepath'].'small_'.$z['savename'];
+                $im -> save($smallpicname);
+                // 把缩略图保存到数据库中
+                $data['goods_small_img'] = substr($smallpicname,2);// 去除./
             }
             $z = $goods->save($data);
             if($z){

@@ -16,12 +16,18 @@
                    <div class="panel-body">
                        <div class="row">
                            <div class="col-lg-6">
-                               <form role="form" action="{$smarty.const.__SELF__}" method="post">
+                               <form role="form" action="{$smarty.const.__SELF__}" method="post" enctype="multipart/form-data">
                                    <div class="form-group">
                                        <label>商品名称</label>
                                        <input class="form-control" name="goods_name" value="{$info['goods_name']}">
                                        <span class="text-danger">{$errorInfo.goods_name}</span>
                                    </div>
+                                   <div class="form-group">
+                                        <label>商品图片</label>
+                                        <input type="file" name="goods_pic">
+                                    </div>
+                                    <img src="{$smarty.const.SITE_URL}{$info['goods_small_img']}" alt="">
+
                                    <div class="form-group">
                                        <label>商品价格</label>
                                        <input class="form-control" name="goods_price" value="{$info['goods_price']}">

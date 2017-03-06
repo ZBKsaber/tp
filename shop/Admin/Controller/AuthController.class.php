@@ -16,6 +16,17 @@ class AuthController extends AdminController {
     public function tianjia(){
         $auth = new \Model\AuthModel();
         if(!empty($_POST)){
+            $data = $auth -> create();
+            if ($data == false) {
+                $this -> assign('post',$_POST);
+                $this -> assign('errorInfo',$auth -> getError());
+                // 把获取的权限信息传递给模板
+                $auth_infoC = $auth -> where('auth_level=0') -> select();
+                $this -> assign('auth_infoA',session('auth_infoA'));
+                $this -> assign('auth_infoB',session('auth_infoB'));
+                $this -> assign('auth_infoC',$auth_infoC);
+                return $this->display();
+            }
             // 全路径和等级字段数据需要二期制作
             $z = $auth -> saveData($_POST);
             if($z){

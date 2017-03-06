@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 10:16:27
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 14:16:19
          compiled from "D:/wamp64/www/tp/shop/Admin/View\Goods\tianjia.html" */ ?>
 <?php /*%%SmartyHeaderCode:1680258bcc075b82994-35080473%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '88252dc4d9d95b3e0a1ef806acb71353bc84af74' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\Goods\\tianjia.html',
-      1 => 1488766583,
+      1 => 1488780978,
       2 => 'file',
     ),
     '04201239d7d4eafa981430d32045b04705f85800' => 
@@ -171,7 +171,8 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
 " method="post" enctype="multipart/form-data">
                                    <div class="form-group">
                                        <label>商品名称</label>
-                                       <input class="form-control" name="goods_name">
+                                       <input class="form-control" name="goods_name" value="<?php echo $_smarty_tpl->tpl_vars['post']->value['goods_name'];?>
+">
                                        <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_name'];?>
 </span>
                                    </div>
@@ -181,25 +182,29 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
                                     </div>
                                    <div class="form-group">
                                        <label>商品价格</label>
-                                       <input class="form-control" name="goods_price">
+                                       <input class="form-control" name="goods_price" value="<?php echo $_smarty_tpl->tpl_vars['post']->value['goods_price'];?>
+">
                                        <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_price'];?>
 </span>
                                    </div>
                                    <div class="form-group">
                                        <label>商品数量</label>
-                                       <input class="form-control" name="goods_number">
+                                       <input class="form-control" name="goods_number" value="<?php echo $_smarty_tpl->tpl_vars['post']->value['goods_price'];?>
+">
                                        <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_number'];?>
 </span>
                                    </div>
                                    <div class="form-group">
                                        <label>商品重量</label>
-                                       <input class="form-control" name="goods_weight">
+                                       <input class="form-control" name="goods_weight" value="<?php echo $_smarty_tpl->tpl_vars['post']->value['goods_weight'];?>
+">
                                        <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_weight'];?>
 </span>
                                    </div>
                                    <div class="form-group">
                                        <label>商品描述</label>
-                                       <textarea class="form-control" rows="3" name="goods_introduce"></textarea>
+                                       <textarea class="form-control" rows="3" name="goods_introduce"> <?php echo $_smarty_tpl->tpl_vars['post']->value['goods_introduce'];?>
+</textarea>
                                        <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_introduce'];?>
 </span>
                                    </div>

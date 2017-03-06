@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 10:27:56
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 14:38:37
          compiled from "D:/wamp64/www/tp/shop/Admin/View\Goods\upd.html" */ ?>
 <?php /*%%SmartyHeaderCode:1488658bcc825153465-55634472%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '76f7d62df584b84a4dcd4fa9b05138ae082a227a' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\Goods\\upd.html',
-      1 => 1488767273,
+      1 => 1488782315,
       2 => 'file',
     ),
     '04201239d7d4eafa981430d32045b04705f85800' => 
@@ -168,7 +168,7 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
                        <div class="row">
                            <div class="col-lg-6">
                                <form role="form" action="<?php echo @__SELF__;?>
-" method="post">
+" method="post" enctype="multipart/form-data">
                                    <div class="form-group">
                                        <label>商品名称</label>
                                        <input class="form-control" name="goods_name" value="<?php echo $_smarty_tpl->tpl_vars['info']->value['goods_name'];?>
@@ -176,6 +176,14 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
                                        <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_name'];?>
 </span>
                                    </div>
+                                   <div class="form-group">
+                                        <label>商品图片</label>
+                                        <input type="file" name="goods_pic">
+                                    </div>
+                                    <img src="<?php echo @SITE_URL;?>
+<?php echo $_smarty_tpl->tpl_vars['info']->value['goods_small_img'];?>
+" alt="">
+
                                    <div class="form-group">
                                        <label>商品价格</label>
                                        <input class="form-control" name="goods_price" value="<?php echo $_smarty_tpl->tpl_vars['info']->value['goods_price'];?>

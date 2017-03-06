@@ -4,6 +4,23 @@ namespace Admin\Controller;
 use Tools\AdminController;
 use Think\Verify;
 class ManagerController extends AdminController {
+    public function showlist(){
+        $data = D('Manager') -> select();
+        $role = D('Role') -> select();
+        foreach ($data as $k => &$v) {
+            foreach ($role as $j => $k) {
+                if ($v['mg_role_id'] == $k['role_id']) {
+                    $v['mg_role_name'] = $k['role_name'];
+                }elseif ($v['mg_role_id'] == 0) {
+                    $v['mg_role_name'] = '超级管理员';
+                }
+            }
+        }
+        $this -> assign('info',$data);
+        $this -> assign('auth_infoA',session('auth_infoA'));
+        $this -> assign('auth_infoB',session('auth_infoB'));
+        $this->display();
+    }
     public function login(){
         // 展示页面和收集表单的逻辑区分
         if(!empty($_POST)){
