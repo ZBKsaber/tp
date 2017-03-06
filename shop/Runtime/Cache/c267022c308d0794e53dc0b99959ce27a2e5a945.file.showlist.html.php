@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 10:20:15
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 16:53:11
          compiled from "D:/wamp64/www/tp/shop/Admin/View\Goods\showlist.html" */ ?>
 <?php /*%%SmartyHeaderCode:2691658bcc75f8d7e56-01736121%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -13,7 +13,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '04201239d7d4eafa981430d32045b04705f85800' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\base.html',
-      1 => 1481272942,
+      1 => 1488790385,
       2 => 'file',
     ),
   ),
@@ -21,6 +21,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_58bcc75fc3b22',
   'variables' => 
   array (
     'auth_infoA' => 0,
@@ -29,55 +31,36 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'vv' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_58bcc75fc3b22',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58bcc75fc3b22')) {function content_58bcc75fc3b22($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include 'D:\\wamp64\\www\\tp\\ThinkPHP\\Library\\Vendor\\Smarty\\plugins\\modifier.date_format.php';
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>后台</title>
-
-    <!-- Bootstrap Core CSS -->
     <link href="<?php echo @BOWER_URL;?>
 /bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
     <link href="<?php echo @BOWER_URL;?>
 /metisMenu/dist/metisMenu.min.css" rel="stylesheet">
-
-    <!-- DataTables CSS -->
     <link href="<?php echo @BOWER_URL;?>
 /datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
-
-    <!-- DataTables Responsive CSS -->
     <link href="<?php echo @BOWER_URL;?>
 /datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link href="<?php echo @DIST_URL;?>
 /css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
     <link href="<?php echo @BOWER_URL;?>
 /font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
-
 <body>
     <div id="wrapper">
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -105,16 +88,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <li class="sidebar-search">
-                            <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="搜索">
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
-                            </div>
-                        </li>
                         <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
  $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['auth_infoA']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}

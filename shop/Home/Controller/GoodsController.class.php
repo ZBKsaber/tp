@@ -2,8 +2,11 @@
 namespace Home\Controller;
 use Think\Controller;
 class GoodsController extends Controller {
+    public function index(){
+        echo 'index';
+    }
     //商品列表
-    public function list(){
+    public function showlist(){
         $this->display();
     }
 

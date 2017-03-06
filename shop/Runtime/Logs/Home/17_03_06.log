@@ -1,0 +1,153 @@
+[ 2017-03-06T17:01:33+08:00 ] 127.0.0.1 /index.php/home/goods/showlist
+ERR: 模板不存在:D:/wamp64/www/tp/shop/Home/View/Goods/showlist.html
+
+[ 2017-03-06T17:04:17+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/css/style.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:04:17+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/css/headers/header1.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:04:17+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/bootstrap/css/bootstrap.min.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:04:17+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/css/themes/headers/default.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:04:17+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/css/themes/default.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:04:17+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/bootstrap/css/bootstrap-responsive.min.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:04:17+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/portfolioSorting/css/sorting.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:04:18+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/font-awesome/css/font-awesome.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:04:18+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/css/style_responsive.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:04:18+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/js/jquery-1.8.2.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:04:18+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/js/modernizr.custom.js
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:04:18+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/portfolioSorting/js/jquery.quicksand.js
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:04:18+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/bootstrap/js/bootstrap.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:04:18+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/portfolioSorting/js/sorting.js
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:04:18+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/js/app.js
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:04:18+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/back-to-top.js
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:06:44+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/css/style.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:06:44+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/bootstrap/css/bootstrap-responsive.min.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:06:44+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/css/style_responsive.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:06:44+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/bootstrap/css/bootstrap.min.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:06:44+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/font-awesome/css/font-awesome.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:06:44+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/css/headers/header1.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:06:44+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/portfolioSorting/css/sorting.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:06:44+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/css/themes/headers/default.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:06:44+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/css/themes/default.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:06:44+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/js/jquery-1.8.2.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:06:44+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/bootstrap/js/bootstrap.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:06:44+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/portfolioSorting/js/sorting.js
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:06:44+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/js/modernizr.custom.js
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:06:44+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/portfolioSorting/js/jquery.quicksand.js
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:06:44+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/back-to-top.js
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:06:44+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/js/app.js
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:06:44+08:00 ] 127.0.0.1 /index.php/Home/Goods/lists
+ERR: 非法操作:lists
+
+[ 2017-03-06T17:07:29+08:00 ] 127.0.0.1 /index.php/Home/Goods/showlist
+ERR: 模板不存在:D:/wamp64/www/tp/shop/Home/View/Goods/showlist.html
+
+[ 2017-03-06T17:07:41+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/bootstrap/css/bootstrap.min.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:07:41+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/portfolioSorting/css/sorting.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:07:41+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/bootstrap/css/bootstrap-responsive.min.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:07:41+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/css/themes/default.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:07:41+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/css/style_responsive.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:07:41+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/font-awesome/css/font-awesome.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:07:41+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/css/themes/headers/default.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:07:41+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/css/style.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:07:41+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/css/headers/header1.css
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:07:41+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/js/jquery-1.8.2.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:07:41+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/js/modernizr.custom.js
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:07:41+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/bootstrap/js/bootstrap.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:07:41+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/portfolioSorting/js/sorting.js
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:07:41+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/portfolioSorting/js/jquery.quicksand.js
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:07:41+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/plugins/back-to-top.js
+ERR: 非法操作:assets
+
+[ 2017-03-06T17:07:41+08:00 ] 127.0.0.1 /index.php/Home/Goods/assets/js/app.js
+ERR: 非法操作:assets
+
