@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 14:38:37
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 15:49:06
          compiled from "D:/wamp64/www/tp/shop/Admin/View\Goods\upd.html" */ ?>
 <?php /*%%SmartyHeaderCode:1488658bcc825153465-55634472%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '76f7d62df584b84a4dcd4fa9b05138ae082a227a' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\Goods\\upd.html',
-      1 => 1488782315,
+      1 => 1488786544,
       2 => 'file',
     ),
     '04201239d7d4eafa981430d32045b04705f85800' => 
@@ -207,8 +207,10 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
                                    </div>
                                    <div class="form-group">
                                        <label>商品描述</label>
-                                       <textarea class="form-control" rows="3" name="goods_introduce"><?php echo $_smarty_tpl->tpl_vars['info']->value['goods_introduce'];?>
-</textarea>
+                                       <!-- 加载编辑器的容器 -->
+                                       <script id="container" name="goods_introduce" type="text/plain"><?php echo htmlspecialchars_decode($_smarty_tpl->tpl_vars['info']->value['goods_introduce']);?>
+</script>
+                                       <!-- <textarea class="form-control" rows="3" name="goods_introduce"></textarea> -->
                                        <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_introduce'];?>
 </span>
                                    </div>
@@ -229,6 +231,20 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
            <!-- /.col-lg-12 -->
        </div>
        <!-- /.row -->
+       <!-- 配置文件 -->
+   <script type="text/javascript" src="/Public/js/ueditor/ueditor.config.js"></script>
+   <!-- 编辑器源码文件 -->
+   <script type="text/javascript" src="/Public/js/ueditor/ueditor.all.js"></script>
+   <!-- 实例化编辑器 -->
+   <script type="text/javascript">
+       var editor = UE.getEditor('container',{
+           initialFrameHeight:250,
+           toolbars: [
+                        ['fullscreen', 'source', 'undo', 'redo'],
+                        ['bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc']
+                    ],
+       });
+   </script>
 
         </div>
     </div>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 14:16:19
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 15:29:39
          compiled from "D:/wamp64/www/tp/shop/Admin/View\Goods\tianjia.html" */ ?>
 <?php /*%%SmartyHeaderCode:1680258bcc075b82994-35080473%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '88252dc4d9d95b3e0a1ef806acb71353bc84af74' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\Goods\\tianjia.html',
-      1 => 1488780978,
+      1 => 1488785377,
       2 => 'file',
     ),
     '04201239d7d4eafa981430d32045b04705f85800' => 
@@ -203,8 +203,8 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
                                    </div>
                                    <div class="form-group">
                                        <label>商品描述</label>
-                                       <textarea class="form-control" rows="3" name="goods_introduce"> <?php echo $_smarty_tpl->tpl_vars['post']->value['goods_introduce'];?>
-</textarea>
+                                       <!-- 加载编辑器的容器 -->
+                                       <script id="container" name="goods_introduce" type="text/plain"></script>
                                        <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_introduce'];?>
 </span>
                                    </div>
@@ -223,6 +223,20 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
            <!-- /.col-lg-12 -->
        </div>
        <!-- /.row -->
+       <!-- 配置文件 -->
+   <script type="text/javascript" src="/Public/js/ueditor/ueditor.config.js"></script>
+   <!-- 编辑器源码文件 -->
+   <script type="text/javascript" src="/Public/js/ueditor/ueditor.all.js"></script>
+   <!-- 实例化编辑器 -->
+   <script type="text/javascript">
+       var editor = UE.getEditor('container',{
+           initialFrameHeight:250,
+           toolbars: [
+                        ['fullscreen', 'source', 'undo', 'redo'],
+                        ['bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc']
+                    ],
+       });
+   </script>
 
         </div>
     </div>
