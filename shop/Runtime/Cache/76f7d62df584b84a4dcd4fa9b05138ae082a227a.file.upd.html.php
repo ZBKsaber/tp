@@ -1,13 +1,13 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-04 15:29:11
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 10:27:56
          compiled from "D:/wamp64/www/tp/shop/Admin/View\Goods\upd.html" */ ?>
-<?php /*%%SmartyHeaderCode:577858ba6cc7de2995-71926128%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1488658bcc825153465-55634472%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '76f7d62df584b84a4dcd4fa9b05138ae082a227a' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\Goods\\upd.html',
-      1 => 1479350996,
+      1 => 1488767273,
       2 => 'file',
     ),
     '04201239d7d4eafa981430d32045b04705f85800' => 
@@ -17,10 +17,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '577858ba6cc7de2995-71926128',
+  'nocache_hash' => '1488658bcc825153465-55634472',
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_58bcc82544921',
   'variables' => 
   array (
     'auth_infoA' => 0,
@@ -29,10 +31,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'vv' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_58ba6cc813613',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ba6cc813613')) {function content_58ba6cc813613($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58bcc82544921')) {function content_58bcc82544921($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -173,26 +173,36 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
                                        <label>商品名称</label>
                                        <input class="form-control" name="goods_name" value="<?php echo $_smarty_tpl->tpl_vars['info']->value['goods_name'];?>
 ">
+                                       <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_name'];?>
+</span>
                                    </div>
                                    <div class="form-group">
                                        <label>商品价格</label>
                                        <input class="form-control" name="goods_price" value="<?php echo $_smarty_tpl->tpl_vars['info']->value['goods_price'];?>
 ">
+                                        <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_price'];?>
+</span>
                                    </div>
                                    <div class="form-group">
                                        <label>商品数量</label>
                                        <input class="form-control" name="goods_number" value="<?php echo $_smarty_tpl->tpl_vars['info']->value['goods_number'];?>
 ">
+                                        <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_number'];?>
+</span>
                                    </div>
                                    <div class="form-group">
                                        <label>商品重量</label>
                                        <input class="form-control" name="goods_weight" value="<?php echo $_smarty_tpl->tpl_vars['info']->value['goods_weight'];?>
 ">
+                                       <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_weight'];?>
+</span>
                                    </div>
                                    <div class="form-group">
                                        <label>商品描述</label>
                                        <textarea class="form-control" rows="3" name="goods_introduce"><?php echo $_smarty_tpl->tpl_vars['info']->value['goods_introduce'];?>
 </textarea>
+                                       <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_introduce'];?>
+</span>
                                    </div>
                                     <input type="hidden" name="goods_id" value="<?php echo $_smarty_tpl->tpl_vars['info']->value['goods_id'];?>
 ">

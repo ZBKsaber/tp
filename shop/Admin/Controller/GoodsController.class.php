@@ -81,7 +81,6 @@ class GoodsController extends AdminController {
     }
 
     public function tianjia(){
-        $goods = D('Goods');
         // 判断是提交表单还是显示表单
         if(!empty($_POST)){
             // 商品图片处理
@@ -113,7 +112,15 @@ class GoodsController extends AdminController {
                 $_POST['goods_small_img'] = substr($smallpicname,2);// 去除./
             }
             // create()自动接收$_POST
+            $goods = D('Goods');
             $data = $goods -> create();
+            if ($data == false) {
+                $this -> assign('errorInfo',$goods -> getError());
+                // 把获取的权限信息传递给模板
+                $this -> assign('auth_infoA',session('auth_infoA'));
+                $this -> assign('auth_infoB',session('auth_infoB'));
+                return $this->display();
+            }
             $z = $goods -> add($data);
             if($z){
                 // $this -> redirect(地址,参数,间隔时间,提示信息);
@@ -144,13 +151,22 @@ class GoodsController extends AdminController {
         $goods = D('Goods');
         // 展示表单和更新表单的逻辑
         if(!empty($_POST)){
-            $z = $goods->save($_POST);
-            // if($z){
-            //     // $this -> redirect(地址,参数,间隔时间,提示信息);
-            //     $this -> redirect('showlist',array(),2,'商品修改成功');
-            // }else{
-            //     $this -> redirect('upd',array('goods_id'=>$goods_id),2,'商品修改失败');
-            // }
+            $data = $goods -> create();
+            if ($data == false) {
+                $this -> assign('info',$_POST);
+                $this -> assign('errorInfo',$goods -> getError());
+                // 把获取的权限信息传递给模板
+                $this -> assign('auth_infoA',session('auth_infoA'));
+                $this -> assign('auth_infoB',session('auth_infoB'));
+                return $this->display();
+            }
+            $z = $goods->save($data);
+            if($z){
+                // $this -> redirect(地址,参数,间隔时间,提示信息);
+                $this -> redirect('showlist',array(),2,'商品修改成功');
+            }else{
+                $this -> redirect('upd',array('goods_id'=>$goods_id),2,'商品修改失败');
+            }
         }else{
             // 根据id查找制定的商品
             // $info = D('Goods') -> select($goods_id);

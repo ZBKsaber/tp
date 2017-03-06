@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-04 15:07:42
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 10:20:16
          compiled from "D:/wamp64/www/tp/shop/Home/View\Index\footer.html" */ ?>
-<?php /*%%SmartyHeaderCode:774058ba67bee947e5-79831627%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:237258bcc7604fbc88-93314338%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,15 +11,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '774058ba67bee947e5-79831627',
+  'nocache_hash' => '237258bcc7604fbc88-93314338',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_58ba67bf0b5bb',
+  'unifunc' => 'content_58bcc76065b5d',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ba67bf0b5bb')) {function content_58ba67bf0b5bb($_smarty_tpl) {?><!--=== Footer ===-->
+<?php if ($_valid && !is_callable('content_58bcc76065b5d')) {function content_58bcc76065b5d($_smarty_tpl) {?><!--=== Footer ===-->
 <div class="footer">
 	<div class="container">
 		<div class="row-fluid">

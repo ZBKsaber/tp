@@ -20,6 +20,7 @@
                                    <div class="form-group">
                                        <label>商品名称</label>
                                        <input class="form-control" name="goods_name">
+                                       <span class="text-danger">{$errorInfo.goods_name}</span>
                                    </div>
                                    <div class="form-group">
                                         <label>商品图片</label>
@@ -28,18 +29,22 @@
                                    <div class="form-group">
                                        <label>商品价格</label>
                                        <input class="form-control" name="goods_price">
+                                       <span class="text-danger">{$errorInfo.goods_price}</span>
                                    </div>
                                    <div class="form-group">
                                        <label>商品数量</label>
                                        <input class="form-control" name="goods_number">
+                                       <span class="text-danger">{$errorInfo.goods_number}</span>
                                    </div>
                                    <div class="form-group">
                                        <label>商品重量</label>
                                        <input class="form-control" name="goods_weight">
+                                       <span class="text-danger">{$errorInfo.goods_weight}</span>
                                    </div>
                                    <div class="form-group">
                                        <label>商品描述</label>
                                        <textarea class="form-control" rows="3" name="goods_introduce"></textarea>
+                                       <span class="text-danger">{$errorInfo.goods_introduce}</span>
                                    </div>
                                    <button type="submit" class="btn btn-default">添加</button>
                                    <button type="reset" class="btn btn-default">重置</button>

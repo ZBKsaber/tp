@@ -1,13 +1,13 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-04 15:26:56
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 10:16:27
          compiled from "D:/wamp64/www/tp/shop/Admin/View\Goods\tianjia.html" */ ?>
-<?php /*%%SmartyHeaderCode:1254958ba6c40b45e37-81313356%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1680258bcc075b82994-35080473%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '88252dc4d9d95b3e0a1ef806acb71353bc84af74' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\Goods\\tianjia.html',
-      1 => 1479951034,
+      1 => 1488766583,
       2 => 'file',
     ),
     '04201239d7d4eafa981430d32045b04705f85800' => 
@@ -17,10 +17,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1254958ba6c40b45e37-81313356',
+  'nocache_hash' => '1680258bcc075b82994-35080473',
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_58bcc075e2283',
   'variables' => 
   array (
     'auth_infoA' => 0,
@@ -29,10 +31,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'vv' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_58ba6c40de433',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58ba6c40de433')) {function content_58ba6c40de433($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58bcc075e2283')) {function content_58bcc075e2283($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -172,6 +172,8 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
                                    <div class="form-group">
                                        <label>商品名称</label>
                                        <input class="form-control" name="goods_name">
+                                       <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_name'];?>
+</span>
                                    </div>
                                    <div class="form-group">
                                         <label>商品图片</label>
@@ -180,18 +182,26 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
                                    <div class="form-group">
                                        <label>商品价格</label>
                                        <input class="form-control" name="goods_price">
+                                       <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_price'];?>
+</span>
                                    </div>
                                    <div class="form-group">
                                        <label>商品数量</label>
                                        <input class="form-control" name="goods_number">
+                                       <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_number'];?>
+</span>
                                    </div>
                                    <div class="form-group">
                                        <label>商品重量</label>
                                        <input class="form-control" name="goods_weight">
+                                       <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_weight'];?>
+</span>
                                    </div>
                                    <div class="form-group">
                                        <label>商品描述</label>
                                        <textarea class="form-control" rows="3" name="goods_introduce"></textarea>
+                                       <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_introduce'];?>
+</span>
                                    </div>
                                    <button type="submit" class="btn btn-default">添加</button>
                                    <button type="reset" class="btn btn-default">重置</button>

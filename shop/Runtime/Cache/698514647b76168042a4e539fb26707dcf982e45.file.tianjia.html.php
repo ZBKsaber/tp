@@ -1,13 +1,13 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 10:30:54
-         compiled from "D:/wamp64/www/tp/shop/Admin/View\Role\showlist.html" */ ?>
-<?php /*%%SmartyHeaderCode:2616358bcc9deb9d1c2-08487365%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 10:32:35
+         compiled from "D:/wamp64/www/tp/shop/Admin/View\Auth\tianjia.html" */ ?>
+<?php /*%%SmartyHeaderCode:2679558bcca43687627-65176942%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'c133732682880dd40834f8f44e0cd041ed919548' => 
+    '698514647b76168042a4e539fb26707dcf982e45' => 
     array (
-      0 => 'D:/wamp64/www/tp/shop/Admin/View\\Role\\showlist.html',
-      1 => 1481263216,
+      0 => 'D:/wamp64/www/tp/shop/Admin/View\\Auth\\tianjia.html',
+      1 => 1481506980,
       2 => 'file',
     ),
     '04201239d7d4eafa981430d32045b04705f85800' => 
@@ -17,7 +17,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2616358bcc9deb9d1c2-08487365',
+  'nocache_hash' => '2679558bcca43687627-65176942',
   'function' => 
   array (
   ),
@@ -30,9 +30,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_58bcc9dee6fcf',
+  'unifunc' => 'content_58bcca4390fdc',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58bcc9dee6fcf')) {function content_58bcc9dee6fcf($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58bcca4390fdc')) {function content_58bcca4390fdc($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -151,79 +151,60 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
         </nav>
         <div id="page-wrapper">
             
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">角色列表</h1>
-        </div>
-        <!-- /.col-lg-12 -->
-    </div>
-    <!-- /.row -->
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    角色列表
-                </div>
-                <!-- /.panel-heading -->
-                <div class="panel-body">
-                    <div class="dataTable_wrapper">
-                        <table class="table table-striped table-bordered table-hover" id="dataTables-example">
-                            <thead>
-                                <tr>
-                                    <th>序号</th>
-                                    <th>角色名称</th>
-                                    <th>权限ids</th>
-                                    <th>权限控制器/操作方法</th>
-                                    <th>操作</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+       <div class="row">
+           <div class="col-lg-12">
+               <h1 class="page-header">添加权限</h1>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col-lg-12">
+               <div class="panel panel-default">
+                   <div class="panel-heading">
+                      添加权限
+                   </div>
+                   <div class="panel-body">
+                       <div class="row">
+                           <div class="col-lg-6">
+                               <form role="form" action="<?php echo @__SELF__;?>
+" method="post" enctype="multipart/form-data">
+                                   <div class="form-group">
+                                       <label>权限名称</label>
+                                       <input class="form-control" name="auth_name">
+                                   </div>
+                                   <div class="form-group">
+                                       <label>父级权限</label>
+                                       <select name="auth_pid" class="form-control">
+                                            <option value="0">请选择</option>
+                                            <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
  $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['info']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_from = $_smarty_tpl->tpl_vars['auth_infoC']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
 $_smarty_tpl->tpl_vars['v']->_loop = true;
  $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
 ?>
-                                <tr class="gradeU">
-                                    <td><?php echo $_smarty_tpl->tpl_vars['v']->value['role_id'];?>
-</td>
-                                    <td><?php echo $_smarty_tpl->tpl_vars['v']->value['role_name'];?>
-</td>
-                                    <td><?php echo $_smarty_tpl->tpl_vars['v']->value['role_auth_ids'];?>
-</td>
-                                    <td><?php echo $_smarty_tpl->tpl_vars['v']->value['role_auth_ac'];?>
-</td>
-                                    <td class="center"><a href="<?php echo @__CONTROLLER__;?>
-/distribute/role_id/<?php echo $_smarty_tpl->tpl_vars['v']->value['role_id'];?>
-">分配权限</a> | <a href="">更新</a> | <a href="">删除</a></td>
-                                </tr>
-                            <?php } ?>
-                            </tbody>
-                        </table>
-                    </div>
-                    <!-- <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
- $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['info']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
-foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
-$_smarty_tpl->tpl_vars['v']->_loop = true;
- $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
-?>
-                    <span><?php echo $_smarty_tpl->tpl_vars['v']->value['goods_id'];?>
-</span><br>
-                    <?php } ?>
-                    <?php echo $_smarty_tpl->tpl_vars['pagelist']->value;?>
- -->
-                    <!-- /.table-responsive -->
-
-                </div>
-                <!-- /.panel-body -->
-            </div>
-            <!-- /.panel -->
-        </div>
-        <!-- /.col-lg-12 -->
-    </div>
-    <!-- /.row -->
+                                            <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['auth_id'];?>
+"><?php echo $_smarty_tpl->tpl_vars['v']->value['auth_name'];?>
+</option>
+                                            <?php } ?>
+                                        </select>
+                                   </div>
+                                   <div class="form-group">
+                                       <label>控制器</label>
+                                       <input class="form-control" name="auth_c">
+                                   </div>
+                                   <div class="form-group">
+                                       <label>操作方法</label>
+                                       <input class="form-control" name="auth_a">
+                                   </div>
+                                   <button type="submit" class="btn btn-default">添加</button>
+                                   <button type="reset" class="btn btn-default">重置</button>
+                               </form>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
 
         </div>
     </div>
@@ -240,10 +221,10 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 /metisMenu/dist/metisMenu.min.js"></script>
 
     
-<script>
-    // alert($);
-</script>
-
+    <!-- DataTables JavaScript -->
+    <script src="<?php echo @BOWER_URL;?>
+/datatables/media/js/jquery.dataTables.js"></script>
+    
     <script src="<?php echo @BOWER_URL;?>
 /datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
 

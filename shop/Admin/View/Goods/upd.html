@@ -20,22 +20,27 @@
                                    <div class="form-group">
                                        <label>商品名称</label>
                                        <input class="form-control" name="goods_name" value="{$info['goods_name']}">
+                                       <span class="text-danger">{$errorInfo.goods_name}</span>
                                    </div>
                                    <div class="form-group">
                                        <label>商品价格</label>
                                        <input class="form-control" name="goods_price" value="{$info['goods_price']}">
+                                        <span class="text-danger">{$errorInfo.goods_price}</span>
                                    </div>
                                    <div class="form-group">
                                        <label>商品数量</label>
                                        <input class="form-control" name="goods_number" value="{$info['goods_number']}">
+                                        <span class="text-danger">{$errorInfo.goods_number}</span>
                                    </div>
                                    <div class="form-group">
                                        <label>商品重量</label>
                                        <input class="form-control" name="goods_weight" value="{$info['goods_weight']}">
+                                       <span class="text-danger">{$errorInfo.goods_weight}</span>
                                    </div>
                                    <div class="form-group">
                                        <label>商品描述</label>
                                        <textarea class="form-control" rows="3" name="goods_introduce">{$info['goods_introduce']}</textarea>
+                                       <span class="text-danger">{$errorInfo.goods_introduce}</span>
                                    </div>
                                     <input type="hidden" name="goods_id" value="{$info['goods_id']}">
                                    <button type="submit" class="btn btn-default">修改</button>
