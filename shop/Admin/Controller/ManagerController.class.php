@@ -17,8 +17,6 @@ class ManagerController extends AdminController {
             }
         }
         $this -> assign('info',$data);
-        $this -> assign('auth_infoA',session('auth_infoA'));
-        $this -> assign('auth_infoB',session('auth_infoB'));
         $this->display();
     }
     public function login(){

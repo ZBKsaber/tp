@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-07 11:05:04
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-07 16:18:34
          compiled from "D:/wamp64/www/tp/shop/Home/View\Index\header.html" */ ?>
 <?php /*%%SmartyHeaderCode:2733458be2360b10008-20966715%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c89762202f0276e15fcb4ab81965e1f3b3e77489' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Home/View\\Index\\header.html',
-      1 => 1488851590,
+      1 => 1488874713,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.6',
   'unifunc' => 'content_58be2360cfc38',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58be2360cfc38')) {function content_58be2360cfc38($_smarty_tpl) {?><!DOCTYPE html>
 <!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->
@@ -60,8 +60,6 @@ themes/default.css" id="style_color" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
 
 <body>
-<!--=== Style Switcher ===-->
-<i class="style-switcher-btn icon-cogs"></i>
 <div class="style-switcher">
     <div class="theme-close"><i class="icon-remove"></i></div>
     <div class="theme-heading">Theme Colors</div>
@@ -79,15 +77,6 @@ themes/default.css" id="style_color" />
 <div class="top">
     <div class="container">
         <ul class="loginbar pull-right">
-            <li><i class="icon-globe"></i><a>Languages <i class="icon-sort-up"></i></a>
-                <ul class="nav-list">
-                    <li class="active"><a href="#">English</a> <i class="icon-ok"></i></li>
-                    <li><a href="#">Spanish</a></li>
-                    <li><a href="#">Russian</a></li>
-                    <li><a href="#">German</a></li>
-                </ul>
-            </li>
-            <li class="devider">&nbsp;</li>
             <li><a href="<?php echo @__MODULE__;?>
 /user/register" class="login-btn">注册</a></li>
             <li class="devider">&nbsp;</li>

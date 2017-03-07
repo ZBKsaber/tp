@@ -10,8 +10,6 @@ class RoleController extends AdminController {
         // 获取角色数据,展示数据
         $info = D('Role')->select();
         $this->assign('info',$info);
-        $this -> assign('auth_infoA',session('auth_infoA'));
-        $this -> assign('auth_infoB',session('auth_infoB'));
         $this->display();
     }
     public function distribute($role_id){

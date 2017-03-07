@@ -32,10 +32,7 @@ class IndexController extends AdminController {
             $auth_infoB = D('Auth')->where("auth_level=1 and auth_id in ($auth_ids)")->select();
             session('auth_infoB',$auth_infoB);
         }
-
-        // 把获取的权限信息传递给模板
-        $this -> assign('auth_infoA',session('auth_infoA'));
-        $this -> assign('auth_infoB',session('auth_infoB'));
+        
         $this->display();
     }
 

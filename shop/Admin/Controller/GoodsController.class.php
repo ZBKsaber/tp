@@ -65,23 +65,20 @@ class GoodsController extends AdminController {
         $this -> assign('data',$data);
         $this->assign('info',$info); // 这个assign是父类的assign
         // $this->assign('pagelist',$pagelist);
-        // 把获取的权限信息传递给模板
-        // $this -> assign('auth_infoA',session('auth_infoA'));
-        // $this -> assign('auth_infoB',session('auth_infoB'));
         $this->display();
     }
 
     public function tianjia1(){
         $goods = D('Goods');
         // 以数组的方式添加数据
-        // $arr = array(
-        //     'goods_name'=>'白梅手机',
-        //     'goods_price'=>3600,
-        //     'goods_number'=>15,
-        //     'goods_weight'=>105,
-        // );
-        // $z = $goods -> add($arr);
-        // dump($z);
+        $arr = array(
+            'goods_name'=>'白梅手机',
+            'goods_price'=>3600,
+            'goods_number'=>15,
+            'goods_weight'=>105,
+        );
+        $z = $goods -> add($arr);
+        dump($z);
 
         // AR方式添加数据
         $goods -> goods_name = '小米手机';
@@ -114,9 +111,6 @@ class GoodsController extends AdminController {
                 $this -> assign('post',$_POST);
                 $this -> assign('info',$info);
                 $this -> assign('errorInfo',$goods -> getError());
-                // 把获取的权限信息传递给模板
-                $this -> assign('auth_infoA',session('auth_infoA'));
-                $this -> assign('auth_infoB',session('auth_infoB'));
                 return $this->display();
             }
             $z = $goods -> add($data);
@@ -136,8 +130,6 @@ class GoodsController extends AdminController {
             // var_dump($info);exit;
             // 把获取的权限信息传递给模板
             $this -> assign('info',$info);
-            $this -> assign('auth_infoA',session('auth_infoA'));
-            $this -> assign('auth_infoB',session('auth_infoB'));
             $this->display();
         }
     }
@@ -168,9 +160,6 @@ class GoodsController extends AdminController {
                 $this -> assign('info',$_POST);
                 $this -> assign('cate',$cate);
                 $this -> assign('errorInfo',$goods -> getError());
-                // 把获取的权限信息传递给模板
-                $this -> assign('auth_infoA',session('auth_infoA'));
-                $this -> assign('auth_infoB',session('auth_infoB'));
                 return $this->display();
             }
             if($_FILES['goods_pic']['error']==0){
@@ -200,9 +189,6 @@ class GoodsController extends AdminController {
 
             $this->assign('info',$info);
             $this->assign('cate',$cate);
-            // 把获取的权限信息传递给模板
-            $this -> assign('auth_infoA',session('auth_infoA'));
-            $this -> assign('auth_infoB',session('auth_infoB'));
             $this->display();
         }
     }
