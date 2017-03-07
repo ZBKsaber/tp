@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 16:53:07
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-07 13:32:04
          compiled from "D:/wamp64/www/tp/shop/Admin/View\Index\index.html" */ ?>
-<?php /*%%SmartyHeaderCode:225058bcd19b2d0469-28529345%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:832358be45d42d8314-84856318%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -13,26 +13,24 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '04201239d7d4eafa981430d32045b04705f85800' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\base.html',
-      1 => 1488790385,
+      1 => 1488856094,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '225058bcd19b2d0469-28529345',
+  'nocache_hash' => '832358be45d42d8314-84856318',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_58bcd19b4e38e',
   'variables' => 
   array (
-    'auth_infoA' => 0,
     'v' => 0,
-    'auth_infoB' => 0,
     'vv' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_58be45d44cc38',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58bcd19b4e38e')) {function content_58bcd19b4e38e($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58be45d44cc38')) {function content_58be45d44cc38($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -89,7 +87,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <ul class="nav" id="side-menu">
                         <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
  $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['auth_infoA']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_from = session('auth_infoA'); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
 $_smarty_tpl->tpl_vars['v']->_loop = true;
  $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
@@ -100,7 +98,7 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
                             <ul class="nav nav-second-level">
                                 <?php  $_smarty_tpl->tpl_vars['vv'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['vv']->_loop = false;
  $_smarty_tpl->tpl_vars['kk'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['auth_infoB']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_from = session('auth_infoB'); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['vv']->key => $_smarty_tpl->tpl_vars['vv']->value){
 $_smarty_tpl->tpl_vars['vv']->_loop = true;
  $_smarty_tpl->tpl_vars['kk']->value = $_smarty_tpl->tpl_vars['vv']->key;

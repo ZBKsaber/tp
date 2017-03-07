@@ -1,82 +1,63 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 10:30:54
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-07 15:09:34
          compiled from "D:/wamp64/www/tp/shop/Admin/View\Role\showlist.html" */ ?>
-<?php /*%%SmartyHeaderCode:2616358bcc9deb9d1c2-08487365%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1770358be5cae937c57-00446754%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'c133732682880dd40834f8f44e0cd041ed919548' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\Role\\showlist.html',
-      1 => 1481263216,
+      1 => 1488790610,
       2 => 'file',
     ),
     '04201239d7d4eafa981430d32045b04705f85800' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\base.html',
-      1 => 1481272942,
+      1 => 1488856094,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2616358bcc9deb9d1c2-08487365',
+  'nocache_hash' => '1770358be5cae937c57-00446754',
   'function' => 
   array (
   ),
   'variables' => 
   array (
-    'auth_infoA' => 0,
     'v' => 0,
-    'auth_infoB' => 0,
     'vv' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_58bcc9dee6fcf',
+  'unifunc' => 'content_58be5caebb486',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58bcc9dee6fcf')) {function content_58bcc9dee6fcf($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58be5caebb486')) {function content_58be5caebb486($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>后台</title>
-
-    <!-- Bootstrap Core CSS -->
     <link href="<?php echo @BOWER_URL;?>
 /bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
     <link href="<?php echo @BOWER_URL;?>
 /metisMenu/dist/metisMenu.min.css" rel="stylesheet">
-
-    <!-- DataTables CSS -->
     <link href="<?php echo @BOWER_URL;?>
 /datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
-
-    <!-- DataTables Responsive CSS -->
     <link href="<?php echo @BOWER_URL;?>
 /datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link href="<?php echo @DIST_URL;?>
 /css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
     <link href="<?php echo @BOWER_URL;?>
 /font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
-
 <body>
     <div id="wrapper">
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -104,19 +85,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <li class="sidebar-search">
-                            <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="搜索">
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
-                            </div>
-                        </li>
                         <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
  $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['auth_infoA']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_from = session('auth_infoA'); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
 $_smarty_tpl->tpl_vars['v']->_loop = true;
  $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
@@ -127,7 +98,7 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
                             <ul class="nav nav-second-level">
                                 <?php  $_smarty_tpl->tpl_vars['vv'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['vv']->_loop = false;
  $_smarty_tpl->tpl_vars['kk'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['auth_infoB']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_from = session('auth_infoB'); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['vv']->key => $_smarty_tpl->tpl_vars['vv']->value){
 $_smarty_tpl->tpl_vars['vv']->_loop = true;
  $_smarty_tpl->tpl_vars['kk']->value = $_smarty_tpl->tpl_vars['vv']->key;
@@ -155,16 +126,13 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
         <div class="col-lg-12">
             <h1 class="page-header">角色列表</h1>
         </div>
-        <!-- /.col-lg-12 -->
     </div>
-    <!-- /.row -->
     <div class="row">
         <div class="col-lg-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     角色列表
                 </div>
-                <!-- /.panel-heading -->
                 <div class="panel-body">
                     <div class="dataTable_wrapper">
                         <table class="table table-striped table-bordered table-hover" id="dataTables-example">
@@ -202,28 +170,10 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
                             </tbody>
                         </table>
                     </div>
-                    <!-- <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
- $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['info']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
-foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
-$_smarty_tpl->tpl_vars['v']->_loop = true;
- $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
-?>
-                    <span><?php echo $_smarty_tpl->tpl_vars['v']->value['goods_id'];?>
-</span><br>
-                    <?php } ?>
-                    <?php echo $_smarty_tpl->tpl_vars['pagelist']->value;?>
- -->
-                    <!-- /.table-responsive -->
-
                 </div>
-                <!-- /.panel-body -->
             </div>
-            <!-- /.panel -->
         </div>
-        <!-- /.col-lg-12 -->
     </div>
-    <!-- /.row -->
 
         </div>
     </div>
@@ -240,9 +190,6 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 /metisMenu/dist/metisMenu.min.js"></script>
 
     
-<script>
-    // alert($);
-</script>
 
     <script src="<?php echo @BOWER_URL;?>
 /datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>

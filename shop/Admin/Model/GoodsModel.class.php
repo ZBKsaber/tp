@@ -11,6 +11,7 @@
             // 验证用户名 非空
             //array(字段名称是表单域name属性来的,验证规则,错误提示,[验证条件,附加规则,验证时间]);
             array('goods_name','require','商品名不能为空'),
+            array('goods_category_id','number','数据异常'),
             array('goods_price','require','商品价格不能为空'),
             array('goods_number','require','商品数量不能为空'),
             array('goods_weight','require','商品重量不能为空'),

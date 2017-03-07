@@ -1,34 +1,32 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 11:03:04
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-07 13:31:49
          compiled from "D:/wamp64/www/tp/shop/Admin/View\Manager\login.html" */ ?>
-<?php /*%%SmartyHeaderCode:312558bcd168ebf760-77610338%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1515458be45c5b2dae0-38005636%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'b462127c5fd6a288020a51b13698983d04e1eacd' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\Manager\\login.html',
-      1 => 1488611198,
+      1 => 1488790628,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '312558bcd168ebf760-77610338',
+  'nocache_hash' => '1515458be45c5b2dae0-38005636',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_58bcd1690d4fb',
+  'unifunc' => 'content_58be45c5c46f2',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58bcd1690d4fb')) {function content_58bcd1690d4fb($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58be45c5c46f2')) {function content_58be45c5c46f2($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>后台登录</title>
     <link href="<?php echo @BOWER_URL;?>
 bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -77,7 +75,6 @@ font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
                                         <input name="remember" type="checkbox" value="Remember Me">记住我
                                     </label>
                                 </div>
-                                <!-- Change this to a button or input when using this as a form -->
                                 <button id="tijiao" type="button" class="btn btn-success">登录</button>
                             </fieldset>
                         </form>

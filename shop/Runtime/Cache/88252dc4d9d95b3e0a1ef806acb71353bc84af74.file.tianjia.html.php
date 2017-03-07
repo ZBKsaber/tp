@@ -1,38 +1,36 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 16:53:36
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-07 14:39:14
          compiled from "D:/wamp64/www/tp/shop/Admin/View\Goods\tianjia.html" */ ?>
-<?php /*%%SmartyHeaderCode:1680258bcc075b82994-35080473%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2720158be45c56c4b67-46695719%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '88252dc4d9d95b3e0a1ef806acb71353bc84af74' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\Goods\\tianjia.html',
-      1 => 1488785377,
+      1 => 1488868680,
       2 => 'file',
     ),
     '04201239d7d4eafa981430d32045b04705f85800' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\base.html',
-      1 => 1488790385,
+      1 => 1488856094,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1680258bcc075b82994-35080473',
+  'nocache_hash' => '2720158be45c56c4b67-46695719',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_58bcc075e2283',
+  'unifunc' => 'content_58be45c59be79',
   'variables' => 
   array (
-    'auth_infoA' => 0,
     'v' => 0,
-    'auth_infoB' => 0,
     'vv' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58bcc075e2283')) {function content_58bcc075e2283($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58be45c59be79')) {function content_58be45c59be79($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -89,7 +87,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <ul class="nav" id="side-menu">
                         <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
  $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['auth_infoA']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_from = session('auth_infoA'); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
 $_smarty_tpl->tpl_vars['v']->_loop = true;
  $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
@@ -100,7 +98,7 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
                             <ul class="nav nav-second-level">
                                 <?php  $_smarty_tpl->tpl_vars['vv'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['vv']->_loop = false;
  $_smarty_tpl->tpl_vars['kk'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['auth_infoB']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_from = session('auth_infoB'); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['vv']->key => $_smarty_tpl->tpl_vars['vv']->value){
 $_smarty_tpl->tpl_vars['vv']->_loop = true;
  $_smarty_tpl->tpl_vars['kk']->value = $_smarty_tpl->tpl_vars['vv']->key;
@@ -128,9 +126,7 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
            <div class="col-lg-12">
                <h1 class="page-header">添加商品</h1>
            </div>
-           <!-- /.col-lg-12 -->
        </div>
-       <!-- /.row -->
        <div class="row">
            <div class="col-lg-12">
                <div class="panel panel-default">
@@ -147,6 +143,25 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
                                        <input class="form-control" name="goods_name" value="<?php echo $_smarty_tpl->tpl_vars['post']->value['goods_name'];?>
 ">
                                        <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_name'];?>
+</span>
+                                   </div>
+                                   <div class="form-group">
+                                       <label>所属分类</label>
+                                       <select name="goods_category_id" class="form-control">
+                                            <option value="0">顶级分类</option>
+                                            <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->tpl_vars['info']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
+$_smarty_tpl->tpl_vars['v']->_loop = true;
+ $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
+?>
+                                            <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['cat_id'];?>
+"><?php echo $_smarty_tpl->tpl_vars['v']->value['cat_name'];?>
+</option>
+                                            <?php } ?>
+                                        </select>
+                                        <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_class'];?>
 </span>
                                    </div>
                                    <div class="form-group">
@@ -185,18 +200,12 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
                                    <button type="reset" class="btn btn-default">重置</button>
                                </form>
                            </div>
-                           <!-- /.col-lg-6 (nested) -->
                        </div>
-                       <!-- /.row (nested) -->
                    </div>
-                   <!-- /.panel-body -->
                </div>
-               <!-- /.panel -->
            </div>
-           <!-- /.col-lg-12 -->
        </div>
-       <!-- /.row -->
-       <!-- 配置文件 -->
+    <!-- 配置文件 -->
    <script type="text/javascript" src="/Public/js/ueditor/ueditor.config.js"></script>
    <!-- 编辑器源码文件 -->
    <script type="text/javascript" src="/Public/js/ueditor/ueditor.all.js"></script>

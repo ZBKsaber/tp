@@ -45,11 +45,11 @@
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        {foreach $auth_infoA as $k=>$v}
+                        {foreach session('auth_infoA') as $k=>$v}
                         <li>
                             <a href="#"><i class="fa fa-align-justify"></i> {$v.auth_name}<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
-                                {foreach $auth_infoB as $kk=>$vv}
+                                {foreach session('auth_infoB') as $kk=>$vv}
                                 {if $vv.auth_pid == $v.auth_id}
                                 <li>
                                     <a href="{$smarty.const.__MODULE__}/{$vv.auth_c}/{$vv.auth_a}">{$vv.auth_name}</a>

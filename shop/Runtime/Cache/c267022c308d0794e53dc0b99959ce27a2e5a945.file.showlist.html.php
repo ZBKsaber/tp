@@ -1,38 +1,36 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 16:53:11
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-07 14:59:17
          compiled from "D:/wamp64/www/tp/shop/Admin/View\Goods\showlist.html" */ ?>
-<?php /*%%SmartyHeaderCode:2691658bcc75f8d7e56-01736121%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2763958be23601152b0-60754417%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'c267022c308d0794e53dc0b99959ce27a2e5a945' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\Goods\\showlist.html',
-      1 => 1480472650,
+      1 => 1488869955,
       2 => 'file',
     ),
     '04201239d7d4eafa981430d32045b04705f85800' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\base.html',
-      1 => 1488790385,
+      1 => 1488856094,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2691658bcc75f8d7e56-01736121',
+  'nocache_hash' => '2763958be23601152b0-60754417',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_58bcc75fc3b22',
+  'unifunc' => 'content_58be236056a9b',
   'variables' => 
   array (
-    'auth_infoA' => 0,
     'v' => 0,
-    'auth_infoB' => 0,
     'vv' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58bcc75fc3b22')) {function content_58bcc75fc3b22($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include 'D:\\wamp64\\www\\tp\\ThinkPHP\\Library\\Vendor\\Smarty\\plugins\\modifier.date_format.php';
+<?php if ($_valid && !is_callable('content_58be236056a9b')) {function content_58be236056a9b($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include 'D:\\wamp64\\www\\tp\\ThinkPHP\\Library\\Vendor\\Smarty\\plugins\\modifier.date_format.php';
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -90,7 +88,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <ul class="nav" id="side-menu">
                         <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
  $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['auth_infoA']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_from = session('auth_infoA'); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
 $_smarty_tpl->tpl_vars['v']->_loop = true;
  $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
@@ -101,7 +99,7 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
                             <ul class="nav nav-second-level">
                                 <?php  $_smarty_tpl->tpl_vars['vv'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['vv']->_loop = false;
  $_smarty_tpl->tpl_vars['kk'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['auth_infoB']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_from = session('auth_infoB'); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['vv']->key => $_smarty_tpl->tpl_vars['vv']->value){
 $_smarty_tpl->tpl_vars['vv']->_loop = true;
  $_smarty_tpl->tpl_vars['kk']->value = $_smarty_tpl->tpl_vars['vv']->key;
@@ -129,16 +127,13 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
         <div class="col-lg-12">
             <h1 class="page-header">商品列表</h1>
         </div>
-        <!-- /.col-lg-12 -->
     </div>
-    <!-- /.row -->
     <div class="row">
         <div class="col-lg-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     商品列表
                 </div>
-                <!-- /.panel-heading -->
                 <div class="panel-body">
                     <div class="dataTable_wrapper">
                         <table class="table table-striped table-bordered table-hover" id="dataTables-example">
@@ -146,6 +141,7 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
                                 <tr>
                                     <th>序号</th>
                                     <th>商品名称</th>
+                                    <th>所属分类</th>
                                     <th>商品数量</th>
                                     <th>商品价格</th>
                                     <th>图片</th>
@@ -170,15 +166,15 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 </td>
                                     <td><?php echo $_smarty_tpl->tpl_vars['v']->value['goods_name'];?>
 </td>
+                                    <td><?php echo $_smarty_tpl->tpl_vars['data']->value[$_smarty_tpl->tpl_vars['v']->value['goods_category_id']];?>
+</td>
                                     <td><?php echo $_smarty_tpl->tpl_vars['v']->value['goods_number'];?>
 </td>
                                     <td><?php echo $_smarty_tpl->tpl_vars['v']->value['goods_price'];?>
 </td>
-                                    <td><img src="<?php echo @SITE_URL;?>
-<?php echo $_smarty_tpl->tpl_vars['v']->value['goods_big_img'];?>
+                                    <td><img src="<?php echo $_smarty_tpl->tpl_vars['v']->value['goods_big_img'];?>
 " alt="" width="60" height="60"></td>
-                                    <td><img src="<?php echo @SITE_URL;?>
-<?php echo $_smarty_tpl->tpl_vars['v']->value['goods_small_img'];?>
+                                    <td><img src="<?php echo $_smarty_tpl->tpl_vars['v']->value['goods_small_img'];?>
 " alt="" width="40" height="40"></td>
                                     <td><?php echo $_smarty_tpl->tpl_vars['v']->value['goods_brand_id'];?>
 </td>
@@ -192,30 +188,10 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
                             </tbody>
                         </table>
                     </div>
-                    <!-- <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
- $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['info']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
- $_smarty_tpl->tpl_vars['v']->iteration=0;
-foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
-$_smarty_tpl->tpl_vars['v']->_loop = true;
- $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
- $_smarty_tpl->tpl_vars['v']->iteration++;
-?>
-                    <span><?php echo $_smarty_tpl->tpl_vars['v']->value['goods_id'];?>
-</span><br>
-                    <?php } ?>
-                    <?php echo $_smarty_tpl->tpl_vars['pagelist']->value;?>
- -->
-                    <!-- /.table-responsive -->
-
                 </div>
-                <!-- /.panel-body -->
             </div>
-            <!-- /.panel -->
         </div>
-        <!-- /.col-lg-12 -->
     </div>
-    <!-- /.row -->
 
         </div>
     </div>

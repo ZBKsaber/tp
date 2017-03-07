@@ -1,82 +1,63 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 15:49:06
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-07 15:13:27
          compiled from "D:/wamp64/www/tp/shop/Admin/View\Goods\upd.html" */ ?>
-<?php /*%%SmartyHeaderCode:1488658bcc825153465-55634472%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:429758be3009d9dd83-42431615%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '76f7d62df584b84a4dcd4fa9b05138ae082a227a' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\Goods\\upd.html',
-      1 => 1488786544,
+      1 => 1488870806,
       2 => 'file',
     ),
     '04201239d7d4eafa981430d32045b04705f85800' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\base.html',
-      1 => 1481272942,
+      1 => 1488856094,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1488658bcc825153465-55634472',
+  'nocache_hash' => '429758be3009d9dd83-42431615',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_58bcc82544921',
+  'unifunc' => 'content_58be300a15174',
   'variables' => 
   array (
-    'auth_infoA' => 0,
     'v' => 0,
-    'auth_infoB' => 0,
     'vv' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58bcc82544921')) {function content_58bcc82544921($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58be300a15174')) {function content_58be300a15174($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>后台</title>
-
-    <!-- Bootstrap Core CSS -->
     <link href="<?php echo @BOWER_URL;?>
 /bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
     <link href="<?php echo @BOWER_URL;?>
 /metisMenu/dist/metisMenu.min.css" rel="stylesheet">
-
-    <!-- DataTables CSS -->
     <link href="<?php echo @BOWER_URL;?>
 /datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
-
-    <!-- DataTables Responsive CSS -->
     <link href="<?php echo @BOWER_URL;?>
 /datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link href="<?php echo @DIST_URL;?>
 /css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
     <link href="<?php echo @BOWER_URL;?>
 /font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
-
 <body>
     <div id="wrapper">
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -104,19 +85,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <li class="sidebar-search">
-                            <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="搜索">
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
-                            </div>
-                        </li>
                         <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
  $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['auth_infoA']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_from = session('auth_infoA'); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
 $_smarty_tpl->tpl_vars['v']->_loop = true;
  $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
@@ -127,7 +98,7 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
                             <ul class="nav nav-second-level">
                                 <?php  $_smarty_tpl->tpl_vars['vv'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['vv']->_loop = false;
  $_smarty_tpl->tpl_vars['kk'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['auth_infoB']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_from = session('auth_infoB'); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['vv']->key => $_smarty_tpl->tpl_vars['vv']->value){
 $_smarty_tpl->tpl_vars['vv']->_loop = true;
  $_smarty_tpl->tpl_vars['kk']->value = $_smarty_tpl->tpl_vars['vv']->key;
@@ -151,87 +122,96 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
         </nav>
         <div id="page-wrapper">
             
-       <div class="row">
-           <div class="col-lg-12">
-               <h1 class="page-header">修改商品</h1>
-           </div>
-           <!-- /.col-lg-12 -->
+   <div class="row">
+       <div class="col-lg-12">
+           <h1 class="page-header">修改商品</h1>
        </div>
-       <!-- /.row -->
-       <div class="row">
-           <div class="col-lg-12">
-               <div class="panel panel-default">
-                   <div class="panel-heading">
-                      修改商品
-                   </div>
-                   <div class="panel-body">
-                       <div class="row">
-                           <div class="col-lg-6">
-                               <form role="form" action="<?php echo @__SELF__;?>
+   </div>
+   <div class="row">
+       <div class="col-lg-12">
+           <div class="panel panel-default">
+               <div class="panel-heading">
+                  修改商品
+               </div>
+               <div class="panel-body">
+                   <div class="row">
+                       <div class="col-lg-6">
+                           <form role="form" action="<?php echo @__SELF__;?>
 " method="post" enctype="multipart/form-data">
-                                   <div class="form-group">
-                                       <label>商品名称</label>
-                                       <input class="form-control" name="goods_name" value="<?php echo $_smarty_tpl->tpl_vars['info']->value['goods_name'];?>
+                               <div class="form-group">
+                                   <label>商品名称</label>
+                                   <input class="form-control" name="goods_name" value="<?php echo $_smarty_tpl->tpl_vars['info']->value['goods_name'];?>
 ">
-                                       <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_name'];?>
+                                   <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_name'];?>
 </span>
-                                   </div>
-                                   <div class="form-group">
-                                        <label>商品图片</label>
-                                        <input type="file" name="goods_pic">
-                                    </div>
-                                    <img src="<?php echo @SITE_URL;?>
-<?php echo $_smarty_tpl->tpl_vars['info']->value['goods_small_img'];?>
+                               </div>
+                               <div class="form-group">
+                                   <label>所属分类</label>
+                                   <select name="goods_category_id" class="form-control">
+                                        <option value="0">顶级分类</option>
+                                        <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->tpl_vars['cate']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
+$_smarty_tpl->tpl_vars['v']->_loop = true;
+ $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
+?>
+                                        <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['cat_id'];?>
+"<?php if ($_smarty_tpl->tpl_vars['v']->value['cat_id']==$_smarty_tpl->tpl_vars['info']->value['goods_category_id']){?>selected="selected"<?php }?>><?php echo $_smarty_tpl->tpl_vars['v']->value['cat_name'];?>
+</option>
+                                        <?php } ?>
+                                    </select>
+                                    <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_class'];?>
+</span>
+                               </div>
+                               <div class="form-group">
+                                    <label>商品图片</label>
+                                    <input type="file" name="goods_pic">
+                                </div>
+                                <img src="<?php echo $_smarty_tpl->tpl_vars['info']->value['goods_small_img'];?>
 " alt="">
 
-                                   <div class="form-group">
-                                       <label>商品价格</label>
-                                       <input class="form-control" name="goods_price" value="<?php echo $_smarty_tpl->tpl_vars['info']->value['goods_price'];?>
+                               <div class="form-group">
+                                   <label>商品价格</label>
+                                   <input class="form-control" name="goods_price" value="<?php echo $_smarty_tpl->tpl_vars['info']->value['goods_price'];?>
 ">
-                                        <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_price'];?>
+                                    <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_price'];?>
 </span>
-                                   </div>
-                                   <div class="form-group">
-                                       <label>商品数量</label>
-                                       <input class="form-control" name="goods_number" value="<?php echo $_smarty_tpl->tpl_vars['info']->value['goods_number'];?>
+                               </div>
+                               <div class="form-group">
+                                   <label>商品数量</label>
+                                   <input class="form-control" name="goods_number" value="<?php echo $_smarty_tpl->tpl_vars['info']->value['goods_number'];?>
 ">
-                                        <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_number'];?>
+                                    <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_number'];?>
 </span>
-                                   </div>
-                                   <div class="form-group">
-                                       <label>商品重量</label>
-                                       <input class="form-control" name="goods_weight" value="<?php echo $_smarty_tpl->tpl_vars['info']->value['goods_weight'];?>
+                               </div>
+                               <div class="form-group">
+                                   <label>商品重量</label>
+                                   <input class="form-control" name="goods_weight" value="<?php echo $_smarty_tpl->tpl_vars['info']->value['goods_weight'];?>
 ">
-                                       <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_weight'];?>
+                                   <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_weight'];?>
 </span>
-                                   </div>
-                                   <div class="form-group">
-                                       <label>商品描述</label>
-                                       <!-- 加载编辑器的容器 -->
-                                       <script id="container" name="goods_introduce" type="text/plain"><?php echo htmlspecialchars_decode($_smarty_tpl->tpl_vars['info']->value['goods_introduce']);?>
+                               </div>
+                               <div class="form-group">
+                                   <label>商品描述</label>
+                                   <!-- 加载编辑器的容器 -->
+                                   <script id="container" name="goods_introduce" type="text/plain"><?php echo htmlspecialchars_decode($_smarty_tpl->tpl_vars['info']->value['goods_introduce']);?>
 </script>
-                                       <!-- <textarea class="form-control" rows="3" name="goods_introduce"></textarea> -->
-                                       <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_introduce'];?>
+                                   <span class="text-danger"><?php echo $_smarty_tpl->tpl_vars['errorInfo']->value['goods_introduce'];?>
 </span>
-                                   </div>
-                                    <input type="hidden" name="goods_id" value="<?php echo $_smarty_tpl->tpl_vars['info']->value['goods_id'];?>
+                               </div>
+                                <input type="hidden" name="goods_id" value="<?php echo $_smarty_tpl->tpl_vars['info']->value['goods_id'];?>
 ">
-                                   <button type="submit" class="btn btn-default">修改</button>
-                                   <button type="reset" class="btn btn-default">重置</button>
-                               </form>
-                           </div>
-                           <!-- /.col-lg-6 (nested) -->
+                               <button type="submit" class="btn btn-default">修改</button>
+                               <button type="reset" class="btn btn-default">重置</button>
+                           </form>
                        </div>
-                       <!-- /.row (nested) -->
                    </div>
-                   <!-- /.panel-body -->
                </div>
-               <!-- /.panel -->
            </div>
-           <!-- /.col-lg-12 -->
        </div>
-       <!-- /.row -->
-       <!-- 配置文件 -->
+   </div>
+   <!-- 配置文件 -->
    <script type="text/javascript" src="/Public/js/ueditor/ueditor.config.js"></script>
    <!-- 编辑器源码文件 -->
    <script type="text/javascript" src="/Public/js/ueditor/ueditor.all.js"></script>
@@ -240,9 +220,9 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
        var editor = UE.getEditor('container',{
            initialFrameHeight:250,
            toolbars: [
-                        ['fullscreen', 'source', 'undo', 'redo'],
-                        ['bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc']
-                    ],
+                ['fullscreen', 'source', 'undo', 'redo'],
+                ['bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc']
+            ],
        });
    </script>
 

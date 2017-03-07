@@ -19,7 +19,7 @@
                                 {foreach $auth_infoC as $k=>$v}
                                 <tr class="gradeU">
                                     {*判断角色是否已经拥有该权限*}
-                                    <td style="width:200px;"><label> <input type="checkbox" name="auth_id[]" value="{$v.auth_id}" {if in_array($v.auth_id,$have_auth)}checked='checked'{/if}>{$v.auth_name}</label></td>
+                                    <td style="width:200px;"><label> <input type="checkbox" name="auth_id[]" value="{$v.auth_id}" {if in_array($v.auth_id,$have_auth)}checked='checked'{/if}><span style="font-size:18px;">{$v.auth_name}</span></label></td>
                                     <td>
                                     {foreach $auth_infoD as $kk=>$vv}
                                     {if $vv.auth_pid == $v.auth_id}

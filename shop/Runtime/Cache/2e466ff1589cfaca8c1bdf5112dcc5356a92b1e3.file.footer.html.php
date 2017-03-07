@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 10:20:16
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-07 11:05:04
          compiled from "D:/wamp64/www/tp/shop/Home/View\Index\footer.html" */ ?>
-<?php /*%%SmartyHeaderCode:237258bcc7604fbc88-93314338%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:3136758be2360d2b181-41081606%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '2e466ff1589cfaca8c1bdf5112dcc5356a92b1e3' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Home/View\\Index\\footer.html',
-      1 => 1487341926,
+      1 => 1488851890,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '237258bcc7604fbc88-93314338',
+  'nocache_hash' => '3136758be2360d2b181-41081606',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_58bcc76065b5d',
+  'unifunc' => 'content_58be2360ea606',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58bcc76065b5d')) {function content_58bcc76065b5d($_smarty_tpl) {?><!--=== Footer ===-->
+<?php if ($_valid && !is_callable('content_58be2360ea606')) {function content_58be2360ea606($_smarty_tpl) {?><!--=== Footer ===-->
 <div class="footer">
 	<div class="container">
 		<div class="row-fluid">
@@ -88,11 +88,10 @@ sliders/elastislide/11.jpg" alt="" /></a></dt>
                     <li><a href="#" data-original-title="Linkedin" class="social_linkedin"></a></li>
                     <li><a href="#" data-original-title="Vimeo" class="social_vimeo"></a></li>
                 </ul>
-			</div><!--/span4-->
-		</div><!--/row-fluid-->
-	</div><!--/container-->
-</div><!--/footer-->
-<!--=== End Footer ===-->
+			</div>
+		</div>
+	</div>
+</div>
 
 <!--=== Copyright ===-->
 <div class="copyright">
@@ -126,6 +125,11 @@ parallax-slider/js/modernizr.js"></script>
 parallax-slider/js/jquery.cslider.js"></script>
 <script type="text/javascript" src="<?php echo @PLUGINS_URL;?>
 back-to-top.js"></script>
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="<?php echo @PLUGINS_URL;?>
+portfolioSorting/js/jquery.quicksand.js"></script>
+<script type="text/javascript" src="<?php echo @PLUGINS_URL;?>
+portfolioSorting/js/sorting.js"></script>
 <!-- JS Page Level -->
 <script type="text/javascript" src="<?php echo @JS_URL;?>
 app.js"></script>

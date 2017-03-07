@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-06 10:20:16
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-07 11:05:04
          compiled from "D:/wamp64/www/tp/shop/Home/View\Index\header.html" */ ?>
-<?php /*%%SmartyHeaderCode:1493558bcc760307c12-97774370%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2733458be2360b10008-20966715%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'c89762202f0276e15fcb4ab81965e1f3b3e77489' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Home/View\\Index\\header.html',
-      1 => 1487347164,
+      1 => 1488851590,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1493558bcc760307c12-97774370',
+  'nocache_hash' => '2733458be2360b10008-20966715',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_58bcc7604ec28',
+  'unifunc' => 'content_58be2360cfc38',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58bcc7604ec28')) {function content_58bcc7604ec28($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58be2360cfc38')) {function content_58be2360cfc38($_smarty_tpl) {?><!DOCTYPE html>
 <!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
@@ -48,6 +48,8 @@ style_responsive.css" />
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="<?php echo @PLUGINS_URL;?>
 font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="<?php echo @PLUGINS_URL;?>
+portfolioSorting/css/sorting.css" />
     <link rel="stylesheet" href="<?php echo @PLUGINS_URL;?>
 flexslider/flexslider.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php echo @PLUGINS_URL;?>
