@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-07 16:18:34
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-07 16:52:52
          compiled from "D:/wamp64/www/tp/shop/Home/View\Index\header.html" */ ?>
 <?php /*%%SmartyHeaderCode:2733458be2360b10008-20966715%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c89762202f0276e15fcb4ab81965e1f3b3e77489' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Home/View\\Index\\header.html',
-      1 => 1488874713,
+      1 => 1488876770,
       2 => 'file',
     ),
   ),
@@ -17,6 +17,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'version' => 'Smarty-3.1.6',
   'unifunc' => 'content_58be2360cfc38',
+  'variables' => 
+  array (
+    'topCate' => 0,
+    'v' => 0,
+    'j' => 0,
+  ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58be2360cfc38')) {function content_58be2360cfc38($_smarty_tpl) {?><!DOCTYPE html>
@@ -105,97 +111,35 @@ logo1-default.png" alt="Logo" /></a>
                 </a><!-- /nav-collapse -->
                 <div class="nav-collapse collapse">
                     <ul class="nav top-2">
-                        <li class="active">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="active"><a href="index.html">Option1: Landing Page</a></li>
-                                <li><a href="page_home.html">Option2: Header Option</a></li>
-                                <li><a href="page_home4.html">Option3: Revolution Slider</a></li>
-                                <li><a href="page_home5.html">Option4: Amazing Content</a></li>
-                                <li><a href="page_home1.html">Option5: Mixed Content</a></li>
-                                <li><a href="page_home2.html">Option6: Content with Sidebar</a></li>
-                                <li><a href="page_home3.html">Option7: Aplle Style Slider</a></li>
-                                <li><a href="page_home_all.html">Home All In One</a></li>
-                            </ul>
-                            <b class="caret-out"></b>
-                        </li>
+                        <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
+ $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->tpl_vars['topCate']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
+$_smarty_tpl->tpl_vars['v']->_loop = true;
+ $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
+?>
                         <li>
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Pages
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_smarty_tpl->tpl_vars['v']->value['cat_name'];?>
+
                                 <b class="caret"></b>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="page_about.html">About Us</a></li>
-                                <li><a href="page_services.html">Services</a></li>
-                                <li><a href="page_pricing.html">Pricing</a></li>
-                                <li><a href="page_coming_soon.html">Coming Soon</a></li>
-                                <li><a href="page_faq.html">FAQs</a></li>
-                                <li><a href="page_search.html">Search Result</a></li>
-                                <li><a href="page_gallery.html">Gallery</a></li>
-                                <li><a href="page_registration.html">Registration</a></li>
-                                <li><a href="page_login.html">Login</a></li>
-                                <li><a href="page_404.html">404</a></li>
-                                <li><a href="page_clients.html">Clients</a></li>
-                                <li><a href="page_privacy.html">Privacy Policy</a></li>
-                                <li><a href="page_terms.html">Terms of Service</a></li>
-                                <li><a href="page_column_left.html">2 Columns (Left)</a></li>
-                                <li><a href="page_column_right.html">2 Columns (Right)</a></li>
-                            </ul>
-                            <b class="caret-out"></b>
+                            <?php if ($_smarty_tpl->tpl_vars['v']->value['two_cate']){?>
+                                <ul class="dropdown-menu">
+                                    <?php  $_smarty_tpl->tpl_vars['j'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['j']->_loop = false;
+ $_smarty_tpl->tpl_vars['i'] = new Smarty_Variable;
+ $_from = $_smarty_tpl->tpl_vars['v']->value['two_cate']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['j']->key => $_smarty_tpl->tpl_vars['j']->value){
+$_smarty_tpl->tpl_vars['j']->_loop = true;
+ $_smarty_tpl->tpl_vars['i']->value = $_smarty_tpl->tpl_vars['j']->key;
+?>
+                                    <li><a href="page_contact.html"><?php echo $_smarty_tpl->tpl_vars['j']->value['cat_name'];?>
+</a></li>
+                                    <?php } ?>
+                                </ul>
+                                <b class="caret-out"></b>
+                            <?php }?>
                         </li>
-                        <li>
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Features
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="feature_grid.html">Grid Layout</a></li>
-                                <li><a href="feature_typography.html">Typography</a></li>
-                                <li><a href="feature_thumbnail.html">Thumbnails</a></li>
-                                <li><a href="feature_component.html">Components</a></li>
-                                <li><a href="feature_navigation.html">Navigation</a></li>
-                                <li><a href="feature_table.html">Tables</a></li>
-                                <li><a href="feature_form.html">Forms</a></li>
-                                <li><a href="feature_icons.html">Icons</a></li>
-                                <li><a href="feature_button.html">Buttons</a></li>
-                            </ul>
-                            <b class="caret-out"></b>
-                        </li>
-                        <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="portfolio.html">Portfolio</a></li>
-                                <li><a href="portfolio_item.html">Portfolio Item</a></li>
-                                <li><a href="portfolio_2columns.html">Portfolio 2 Columns</a></li>
-                                <li><a href="portfolio_3columns.html">Portfolio 3 Columns</a></li>
-                                <li><a href="portfolio_4columns.html">Portfolio 4 Columns</a></li>
-                            </ul>
-                            <b class="caret-out"></b>
-                        </li>
-                        <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="blog_item.html">Blog Item</a></li>
-                                <li><a href="blog_left_sidebar.html">Blog Left Sidebar</a></li>
-                                <li><a href="blog_item_left_sidebar.html">Blog Item Left Sidebar</a></li>
-                            </ul>
-                            <b class="caret-out"></b>
-                        </li>
-                        <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="page_contact.html">Contact Default</a></li>
-                                <li><a href="page_contact1.html">Contact Boxed Map</a></li>
-                            </ul>
-                            <b class="caret-out"></b>
-                        </li>
+                        <?php } ?>
                         <li><a class="search"><i class="icon-search search-btn"></i></a></li>
                     </ul>
                     <div class="search-open">

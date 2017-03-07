@@ -213,3 +213,6 @@ SQL: SELECT * FROM `sw_manager` WHERE `mg_name` = 'admin' AND `mg_pwd` = '123456
 [ 2017-03-07T16:09:04+08:00 ] 127.0.0.1 /index.php/Admin/User/comment
 ERR: 无法加载控制器:User
 
+[ 2017-03-07T17:16:26+08:00 ] 127.0.0.1 /index.php/Admin/Goods/
+ERR: 非法操作:index
+

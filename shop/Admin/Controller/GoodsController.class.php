@@ -103,11 +103,7 @@ class GoodsController extends AdminController {
             $data = $goods -> create();
             if ($data == false) {
                 // 获取数据表中所有的分类
-                $info = D("Category") -> select();
-                foreach ($info as $k => &$v) {
-                    $count = substr_count($v['path'],',');
-                    $v['cat_name'] = str_repeat('--/',$count).$v['cat_name'];
-                }
+                $info = $this -> getCategory();
                 $this -> assign('post',$_POST);
                 $this -> assign('info',$info);
                 $this -> assign('errorInfo',$goods -> getError());
@@ -239,4 +235,16 @@ class GoodsController extends AdminController {
 
              return $res;
      }
+     /**
+      * 获取所有的分类并格式化
+      */
+      public function getCategory(){
+          // 获取数据表中所有的分类
+          $cate = D("Category") -> select();
+          foreach ($cate as $k => &$v) {
+              $count = substr_count($v['path'],',');
+              $v['cat_name'] = str_repeat('--/',$count).$v['cat_name'];
+          }
+          return $cate;
+      }
 }

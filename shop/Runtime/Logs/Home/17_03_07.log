@@ -4,3 +4,11 @@ ERR: 非法操作:blog_item_left_sidebar
 [ 2017-03-07T16:19:25+08:00 ] 127.0.0.1 /index.php/Home/user/index.html
 ERR: 非法操作:index
 
+[ 2017-03-07T16:37:47+08:00 ] 127.0.0.1 /
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ';status=1 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_category` WHERE ( pid=0;status=1 ) 
+
+[ 2017-03-07T16:37:51+08:00 ] 127.0.0.1 /
+ERR: 1241:Operand should contain 1 column(s)
+ [ SQL语句 ] : SELECT * FROM `sw_category` WHERE ( pid=0,status=1 ) 
+
