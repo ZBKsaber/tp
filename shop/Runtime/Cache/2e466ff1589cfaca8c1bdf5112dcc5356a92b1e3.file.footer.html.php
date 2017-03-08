@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-07 11:05:04
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-08 10:44:45
          compiled from "D:/wamp64/www/tp/shop/Home/View\Index\footer.html" */ ?>
 <?php /*%%SmartyHeaderCode:3136758be2360d2b181-41081606%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2e466ff1589cfaca8c1bdf5112dcc5356a92b1e3' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Home/View\\Index\\footer.html',
-      1 => 1488851890,
+      1 => 1488941083,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.6',
   'unifunc' => 'content_58be2360ea606',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58be2360ea606')) {function content_58be2360ea606($_smarty_tpl) {?><!--=== Footer ===-->
 <div class="footer">
@@ -135,6 +135,9 @@ portfolioSorting/js/sorting.js"></script>
 app.js"></script>
 <script type="text/javascript" src="<?php echo @JS_URL;?>
 pages/index.js"></script>
+<script src="/Public/js/layer.js"></script>
+<script src="/Public/js/dialog.js"></script>
+<script src="/Public/js/common.js"></script>
 <script type="text/javascript">
     jQuery(document).ready(function() {
       	App.init();

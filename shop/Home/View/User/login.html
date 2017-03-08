@@ -3,11 +3,6 @@
 <div class="breadcrumbs margin-bottom-40">
 	<div class="container">
         <h1 class="color-green pull-left">Login</h1>
-        <ul class="pull-right breadcrumb">
-            <li><a href="index.html">Home</a> <span class="divider">/</span></li>
-            <li><a href="">Pages</a> <span class="divider">/</span></li>
-            <li class="active">Login</li>
-        </ul>
     </div><!--/container-->
 </div><!--/breadcrumbs-->
 <!--=== End Breadcrumbs ===-->
@@ -15,23 +10,26 @@
 <!--=== Content Part ===-->
 <div class="container">
 	<div class="row-fluid">
-        <form class="log-page" />
-            <h3>Login to your account</h3>
+        <form id="cms_form" class="log-page" ac="{$smarty.const.__SELF__}" />
+            <h3>登陆账号</h3>
             <div class="input-prepend">
                 <span class="add-on"><i class="icon-user"></i></span>
-                <input class="input-xlarge" type="text" placeholder="Username" />
+                <input class="input-xlarge" type="text" name="username" placeholder="用户名" />
             </div>
             <div class="input-prepend">
                 <span class="add-on"><i class="icon-lock"></i></span>
-                <input class="input-xlarge" type="text" placeholder="Username" />
+                <input class="input-xlarge" type="password" name="password" placeholder="密码" />
+            </div>
+			<div class="input-prepend">
+                <input style="width:100px;margin-right:10px;" class="input-xlarge" type="text" name="verify" placeholder="验证码" />
+			<img id="verifyImg" src="{$smarty.const.__CONTROLLER__}/verifyImg" onclick="this.src='{$smarty.const.__CONTROLLER__}/verifyImg/'+Math.random()" alt="" />
             </div>
             <div class="controls form-inline">
-                <label class="checkbox"><input type="checkbox" /> Stay Signed in</label>
-                <button class="btn-u pull-right" type="submit">Login</button>
+                <button id="tijiao" class="btn-u pull-right" type="button">登陆</button>
             </div>
             <hr />
-            <h4>Forget your Password ?</h4>
-            <p>no worries, <a class="color-green" href="#">click here</a> to reset your password.</p>
+            <h5>忘记密码 ?</h5>
+            <p>别担心, <a class="color-green" href="#">点击这里</a>重置您的密码</p>
         </form>
     </div><!--/row-fluid-->
 </div><!--/container-->

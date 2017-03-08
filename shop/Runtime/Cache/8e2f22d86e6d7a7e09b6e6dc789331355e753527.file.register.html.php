@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-07 16:15:01
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-08 09:10:46
          compiled from "D:/wamp64/www/tp/shop/Home/View\User\register.html" */ ?>
 <?php /*%%SmartyHeaderCode:2330158be676dd15783-66686355%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '8e2f22d86e6d7a7e09b6e6dc789331355e753527' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Home/View\\User\\register.html',
-      1 => 1488874500,
+      1 => 1488935445,
       2 => 'file',
     ),
   ),
@@ -30,11 +30,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<div class="breadcrumbs margin-bottom-50">
     	<div class="container">
             <h1 class="color-green pull-left">注册</h1>
-            <ul class="pull-right breadcrumb">
-                <li><a href="index.html">Home</a> <span class="divider">/</span></li>
-                <li><a href="">Pages</a> <span class="divider">/</span></li>
-                <li class="active">Registration</li>
-            </ul>
         </div>
     </div>
 	<div class="container">

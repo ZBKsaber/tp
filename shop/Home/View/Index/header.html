@@ -46,9 +46,13 @@
 <div class="top">
     <div class="container">
         <ul class="loginbar pull-right">
-            <li><a href="{$smarty.const.__MODULE__}/user/register" class="login-btn">注册</a></li>
-            <li class="devider">&nbsp;</li>
-            <li><a href="{$smarty.const.__MODULE__}/user/login" class="login-btn">登录</a></li>
+            {if session('user_name')}
+                <li>欢迎您 {session('user_name')}</li>
+            {else}
+                <li><a href="{$smarty.const.__MODULE__}/user/register" class="login-btn">注册</a></li>
+                <li class="devider">&nbsp;</li>
+                <li><a href="{$smarty.const.__MODULE__}/user/login" class="login-btn">登录</a></li>
+            {/if}
         </ul>
     </div>
 </div><!--/top-->
@@ -59,7 +63,7 @@
     <div class="container">
         <!-- Logo -->
         <div class="logo">
-            <a href="index.html"><img id="logo-header" src="{$smarty.const.IMG_URL}logo1-default.png" alt="Logo" /></a>
+            <a href="/"><img id="logo-header" src="{$smarty.const.IMG_URL}logo1-default.png" alt="Logo" /></a>
         </div><!-- /logo -->
         <!-- Menu -->
         <div class="navbar">
@@ -71,7 +75,7 @@
                 </a><!-- /nav-collapse -->
                 <div class="nav-collapse collapse">
                     <ul class="nav top-2">
-                        {foreach $topCate as $k=>$v}
+                        {foreach getTopCate() as $k=>$v}
                         <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">{$v.cat_name}
                                 <b class="caret"></b>
@@ -86,7 +90,6 @@
                             {/if}
                         </li>
                         {/foreach}
-                        <li><a class="search"><i class="icon-search search-btn"></i></a></li>
                     </ul>
                     <div class="search-open">
                         <div class="input-append">
@@ -96,9 +99,8 @@
                             </form>
                         </div>
                     </div>
-                </div><!-- /nav-collapse -->
-            </div><!-- /navbar-inner -->
-        </div><!-- /navbar -->
-    </div><!-- /container -->
-</div><!--/header -->
-<!--=== End Header ===-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

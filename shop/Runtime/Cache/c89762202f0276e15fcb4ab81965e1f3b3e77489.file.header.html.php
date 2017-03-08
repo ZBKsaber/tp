@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-07 16:52:52
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-08 11:03:59
          compiled from "D:/wamp64/www/tp/shop/Home/View\Index\header.html" */ ?>
 <?php /*%%SmartyHeaderCode:2733458be2360b10008-20966715%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c89762202f0276e15fcb4ab81965e1f3b3e77489' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Home/View\\Index\\header.html',
-      1 => 1488876770,
+      1 => 1488942238,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_58be2360cfc38',
   'variables' => 
   array (
-    'topCate' => 0,
     'v' => 0,
     'j' => 0,
   ),
@@ -83,11 +82,16 @@ themes/default.css" id="style_color" />
 <div class="top">
     <div class="container">
         <ul class="loginbar pull-right">
-            <li><a href="<?php echo @__MODULE__;?>
+            <?php if (session('user_name')){?>
+                <li>欢迎您 <?php echo session('user_name');?>
+</li>
+            <?php }else{ ?>
+                <li><a href="<?php echo @__MODULE__;?>
 /user/register" class="login-btn">注册</a></li>
-            <li class="devider">&nbsp;</li>
-            <li><a href="<?php echo @__MODULE__;?>
+                <li class="devider">&nbsp;</li>
+                <li><a href="<?php echo @__MODULE__;?>
 /user/login" class="login-btn">登录</a></li>
+            <?php }?>
         </ul>
     </div>
 </div><!--/top-->
@@ -98,7 +102,7 @@ themes/default.css" id="style_color" />
     <div class="container">
         <!-- Logo -->
         <div class="logo">
-            <a href="index.html"><img id="logo-header" src="<?php echo @IMG_URL;?>
+            <a href="/"><img id="logo-header" src="<?php echo @IMG_URL;?>
 logo1-default.png" alt="Logo" /></a>
         </div><!-- /logo -->
         <!-- Menu -->
@@ -113,7 +117,7 @@ logo1-default.png" alt="Logo" /></a>
                     <ul class="nav top-2">
                         <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
  $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['topCate']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_from = getTopCate(); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
 $_smarty_tpl->tpl_vars['v']->_loop = true;
  $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
@@ -140,7 +144,6 @@ $_smarty_tpl->tpl_vars['j']->_loop = true;
                             <?php }?>
                         </li>
                         <?php } ?>
-                        <li><a class="search"><i class="icon-search search-btn"></i></a></li>
                     </ul>
                     <div class="search-open">
                         <div class="input-append">
@@ -150,10 +153,9 @@ $_smarty_tpl->tpl_vars['j']->_loop = true;
                             </form>
                         </div>
                     </div>
-                </div><!-- /nav-collapse -->
-            </div><!-- /navbar-inner -->
-        </div><!-- /navbar -->
-    </div><!-- /container -->
-</div><!--/header -->
-<!--=== End Header ===-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <?php }} ?>
