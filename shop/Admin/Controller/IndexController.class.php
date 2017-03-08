@@ -20,19 +20,19 @@ class IndexController extends AdminController {
         // 获取全部权限数据
         // 顶级权限 区分是否是超级管理员
         if($admin_name === 'admin'){
-            $auth_infoA = D('Auth')->where("auth_level=0")->select();
+            $auth_infoA = D('Auth')->where("auth_level=0 and status=1")->select();
             session('auth_infoA',$auth_infoA);
             // 次顶级权限
-            $auth_infoB = D('Auth')->where("auth_level=1")->select();
+            $auth_infoB = D('Auth')->where("auth_level=1 and status=1")->select();
             session('auth_infoB',$auth_infoB);
         }else{
-            $auth_infoA = D('Auth')->where("auth_level=0 and auth_id in ($auth_ids)")->select();
+            $auth_infoA = D('Auth')->where("auth_level=0 and auth_id in ($auth_ids) and status=1")->select();
             session('auth_infoA',$auth_infoA);
             // 次顶级权限
-            $auth_infoB = D('Auth')->where("auth_level=1 and auth_id in ($auth_ids)")->select();
+            $auth_infoB = D('Auth')->where("auth_level=1 and auth_id in ($auth_ids) and status=1")->select();
             session('auth_infoB',$auth_infoB);
         }
-        
+
         $this->display();
     }
 

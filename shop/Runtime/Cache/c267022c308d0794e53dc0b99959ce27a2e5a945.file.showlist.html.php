@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-07 14:59:17
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-08 11:52:36
          compiled from "D:/wamp64/www/tp/shop/Admin/View\Goods\showlist.html" */ ?>
 <?php /*%%SmartyHeaderCode:2763958be23601152b0-60754417%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -13,7 +13,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '04201239d7d4eafa981430d32045b04705f85800' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\base.html',
-      1 => 1488856094,
+      1 => 1488944495,
       2 => 'file',
     ),
   ),
@@ -218,6 +218,9 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
     <!-- Custom Theme JavaScript -->
     <script src="<?php echo @DIST_URL;?>
 /js/sb-admin-2.js"></script>
+    <script src="/Public/js/layer.js"></script>
+    <script src="/Public/js/dialog.js"></script>
+    <script src="/Public/js/common.js"></script>
 
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
     <script>

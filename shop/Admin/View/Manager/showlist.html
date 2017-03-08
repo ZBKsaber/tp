@@ -19,6 +19,7 @@
                                     <th>序号</th>
                                     <th>名称</th>
                                     <th>所属角色</th>
+                                    <th>状态</th>
                                     <th>操作</th>
                                 </tr>
                             </thead>
@@ -28,6 +29,7 @@
                                     <td>{$v.mg_id}</td>
                                     <td>{$v.mg_name}</td>
                                     <td>{$v.mg_role_name}</td>
+                                    <td>{$v.status|Status}</td>
                                     <td>暂无</td>
                                 </tr>
                             {/foreach}

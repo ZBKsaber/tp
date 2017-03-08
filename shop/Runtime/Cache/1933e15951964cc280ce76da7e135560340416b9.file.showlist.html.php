@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-07 15:43:33
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-08 14:38:32
          compiled from "D:/wamp64/www/tp/shop/Admin/View\Manager\showlist.html" */ ?>
 <?php /*%%SmartyHeaderCode:343558be64a55a0487-27237683%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,13 +7,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1933e15951964cc280ce76da7e135560340416b9' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\Manager\\showlist.html',
-      1 => 1488790650,
+      1 => 1488955111,
       2 => 'file',
     ),
     '04201239d7d4eafa981430d32045b04705f85800' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\base.html',
-      1 => 1488856094,
+      1 => 1488944495,
       2 => 'file',
     ),
   ),
@@ -21,14 +21,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_58be64a57fdc8',
   'variables' => 
   array (
     'v' => 0,
     'vv' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_58be64a57fdc8',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58be64a57fdc8')) {function content_58be64a57fdc8($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
@@ -141,6 +141,7 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
                                     <th>序号</th>
                                     <th>名称</th>
                                     <th>所属角色</th>
+                                    <th>状态</th>
                                     <th>操作</th>
                                 </tr>
                             </thead>
@@ -158,6 +159,8 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
                                     <td><?php echo $_smarty_tpl->tpl_vars['v']->value['mg_name'];?>
 </td>
                                     <td><?php echo $_smarty_tpl->tpl_vars['v']->value['mg_role_name'];?>
+</td>
+                                    <td><?php echo Status($_smarty_tpl->tpl_vars['v']->value['status']);?>
 </td>
                                     <td>暂无</td>
                                 </tr>
@@ -192,6 +195,9 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
     <!-- Custom Theme JavaScript -->
     <script src="<?php echo @DIST_URL;?>
 /js/sb-admin-2.js"></script>
+    <script src="/Public/js/layer.js"></script>
+    <script src="/Public/js/dialog.js"></script>
+    <script src="/Public/js/common.js"></script>
 
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
     <script>

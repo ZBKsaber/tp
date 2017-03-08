@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-07 15:09:36
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-08 14:04:46
          compiled from "D:/wamp64/www/tp/shop/Admin/View\Role\distribute.html" */ ?>
 <?php /*%%SmartyHeaderCode:1240258be5cb0363f10-28997711%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -13,7 +13,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '04201239d7d4eafa981430d32045b04705f85800' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Admin/View\\base.html',
-      1 => 1488856094,
+      1 => 1488944495,
       2 => 'file',
     ),
   ),
@@ -21,14 +21,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_58be5cb06425c',
   'variables' => 
   array (
     'v' => 0,
     'vv' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_58be5cb06425c',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_58be5cb06425c')) {function content_58be5cb06425c($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
@@ -213,6 +213,9 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
     <!-- Custom Theme JavaScript -->
     <script src="<?php echo @DIST_URL;?>
 /js/sb-admin-2.js"></script>
+    <script src="/Public/js/layer.js"></script>
+    <script src="/Public/js/dialog.js"></script>
+    <script src="/Public/js/common.js"></script>
 
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
     <script>
