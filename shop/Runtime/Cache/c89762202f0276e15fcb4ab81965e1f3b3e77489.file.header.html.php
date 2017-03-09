@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-08 11:03:59
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-09 10:25:17
          compiled from "D:/wamp64/www/tp/shop/Home/View\Index\header.html" */ ?>
 <?php /*%%SmartyHeaderCode:2733458be2360b10008-20966715%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c89762202f0276e15fcb4ab81965e1f3b3e77489' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Home/View\\Index\\header.html',
-      1 => 1488942238,
+      1 => 1489026214,
       2 => 'file',
     ),
   ),
@@ -136,7 +136,9 @@ foreach ($_from as $_smarty_tpl->tpl_vars['j']->key => $_smarty_tpl->tpl_vars['j
 $_smarty_tpl->tpl_vars['j']->_loop = true;
  $_smarty_tpl->tpl_vars['i']->value = $_smarty_tpl->tpl_vars['j']->key;
 ?>
-                                    <li><a href="page_contact.html"><?php echo $_smarty_tpl->tpl_vars['j']->value['cat_name'];?>
+                                    <li><a href="/goods/showlist?cate_id=<?php echo $_smarty_tpl->tpl_vars['j']->value['cat_id'];?>
+&cate_name=<?php echo $_smarty_tpl->tpl_vars['j']->value['cat_name'];?>
+"><?php echo $_smarty_tpl->tpl_vars['j']->value['cat_name'];?>
 </a></li>
                                     <?php } ?>
                                 </ul>

@@ -2,11 +2,7 @@
 <!--=== Breadcrumbs ===-->
 <div class="breadcrumbs margin-bottom-40">
 	<div class="container">
-        <h1 class="color-green pull-left">Portfolio</h1>
-        <ul class="pull-right breadcrumb">
-            <li><a href="index.html">Home</a> <span class="divider">/</span></li>
-            <li class="active">Portfolio</li>
-        </ul>
+        <h1 class="color-green pull-left">{$catename}</h1>
     </div><!--/container-->
 </div><!--/breadcrumbs-->
 <!--=== End Breadcrumbs ===-->
@@ -14,155 +10,30 @@
 <!--=== Content Part ===-->
 <div class="container">
 	<div class="row-fluid">
-        <div id="w" style="min-height:385px;">
+        <div id="w">
             <div class="sort" id="sort">
 				<ul class="unstyled inline">
-                	<li><a href="#" class="all selected">All</a></li>
-                	<li><a href="#" class="web">Web</a></li>
-                	<li><a href="#" class="苹果">苹果</a></li>
-                	<li><a href="#" class="print">Print</a></li>
+                	<li><a href="#" class="all selected">所有</a></li>
+                    {foreach $cate as $k=>$v}
+                	<li><a href="#" class="{$v.cat_name}">{$v.cat_name}</a></li>
+                    {/foreach}
                 </ul>
             </div>
 
             <ul class="portfolio recent-work clearfix">
-                <li data-id="id-1" class="苹果">
+                {foreach $goods as $k=>$v}
+                <li data-id="id-{$v.goods_id}" class="{$v.cat_name}">
                     <a href="portfolio_item.html">
-                    	<em class="overflow-hidden"><img src="assets/plugins/portfolioSorting/img/2.jpg" alt="" /></em>
+                    	<em class="overflow-hidden"><img style="width:270px;height:117px;" src="{$v.goods_small_img}" alt="" /></em>
                         <span>
-                            <strong>Happy New Year</strong>
-                            <i>Anim pariatur cliche reprehenderit</i>
+                            <strong>{$v.goods_name}</strong>
+                            <i>{$v.goods_price}</i>
                         </span>
                     </a>
                 </li>
-                <!-- <li data-id="id-2" class="print">
-                    <a href="portfolio_item.html">
-                    	<em class="overflow-hidden"><img src="assets/plugins/portfolioSorting/img/3.jpg" alt="" /></em>
-                        <span>
-                            <strong>Happy New Year</strong>
-                            <i>Anim pariatur cliche reprehenderit</i>
-                        </span>
-                    </a>
-                </li>
-                <li data-id="id-3" class="ios">
-                    <a href="portfolio_item.html">
-                    	<em class="overflow-hidden"><img src="assets/plugins/portfolioSorting/img/4.jpg" alt="" /></em>
-                        <span>
-                            <strong>Happy New Year</strong>
-                            <i>Anim pariatur cliche reprehenderit</i>
-                        </span>
-                    </a>
-                </li>
-                <li data-id="id-4" class="print">
-                    <a href="portfolio_item.html">
-                    	<em class="overflow-hidden"><img src="assets/plugins/portfolioSorting/img/5.jpg" alt="" /></em>
-                        <span>
-                            <strong>Happy New Year</strong>
-                            <i>Anim pariatur cliche reprehenderit</i>
-                        </span>
-                    </a>
-                </li>
-                <li data-id="id-5" class="web">
-                    <a href="portfolio_item.html">
-                    	<em class="overflow-hidden"><img src="assets/plugins/portfolioSorting/img/6.jpg" alt="" /></em>
-                        <span>
-                            <strong>Happy New Year</strong>
-                            <i>Anim pariatur cliche reprehenderit</i>
-                        </span>
-                    </a>
-                </li>
-                <li data-id="id-6" class="web">
-                    <a href="portfolio_item.html">
-                    	<em class="overflow-hidden"><img src="assets/plugins/portfolioSorting/img/7.jpg" alt="" /></em>
-                        <span>
-                            <strong>Happy New Year</strong>
-                            <i>Anim pariatur cliche reprehenderit</i>
-                        </span>
-                    </a>
-                </li>
-                <li data-id="id-7" class="print">
-                    <a href="portfolio_item.html">
-                    	<em class="overflow-hidden"><img src="assets/plugins/portfolioSorting/img/8.jpg" alt="" /></em>
-                        <span>
-                            <strong>Happy New Year</strong>
-                            <i>Anim pariatur cliche reprehenderit</i>
-                        </span>
-                    </a>
-                </li>
-                <li data-id="id-8" class="web">
-                    <a href="portfolio_item.html">
-                    	<em class="overflow-hidden"><img src="assets/plugins/portfolioSorting/img/2.jpg" alt="" /></em>
-                        <span>
-                            <strong>Happy New Year</strong>
-                            <i>Anim pariatur cliche reprehenderit</i>
-                        </span>
-                    </a>
-                </li>
-                <li data-id="id-9" class="ios">
-                    <a href="portfolio_item.html">
-                    	<em class="overflow-hidden"><img src="assets/plugins/portfolioSorting/img/9.jpg" alt="" /></em>
-                        <span>
-                            <strong>Happy New Year</strong>
-                            <i>Anim pariatur cliche reprehenderit</i>
-                        </span>
-                    </a>
-                </li>
-                <li data-id="id-10" class="ios">
-                    <a href="portfolio_item.html">
-                    	<em class="overflow-hidden"><img src="assets/plugins/portfolioSorting/img/10.jpg" alt="" /></em>
-                        <span>
-                            <strong>Happy New Year</strong>
-                            <i>Anim pariatur cliche reprehenderit</i>
-                        </span>
-                    </a>
-                </li>
-                <li data-id="id-11" class="web">
-                    <a href="portfolio_item.html">
-                    	<em class="overflow-hidden"><img src="assets/plugins/portfolioSorting/img/5.jpg" alt="" /></em>
-                        <span>
-                            <strong>Happy New Year</strong>
-                            <i>Anim pariatur cliche reprehenderit</i>
-                        </span>
-                    </a>
-                </li>
-                <li data-id="id-12" class="web">
-                    <a href="portfolio_item.html">
-                    	<em class="overflow-hidden"><img src="assets/plugins/portfolioSorting/img/3.jpg" alt="" /></em>
-                        <span>
-                            <strong>Happy New Year</strong>
-                            <i>Anim pariatur cliche reprehenderit</i>
-                        </span>
-                    </a>
-                </li>
-                <li data-id="id-13" class="ios">
-                    <a href="portfolio_item.html">
-                    	<em class="overflow-hidden"><img src="assets/plugins/portfolioSorting/img/6.jpg" alt="" /></em>
-                        <span>
-                            <strong>Happy New Year</strong>
-                            <i>Anim pariatur cliche reprehenderit</i>
-                        </span>
-                    </a>
-                </li>
-                <li data-id="id-14" class="web">
-                    <a href="portfolio_item.html">
-                    	<em class="overflow-hidden"><img src="assets/plugins/portfolioSorting/img/9.jpg" alt="" /></em>
-                        <span>
-                            <strong>Happy New Year</strong>
-                            <i>Anim pariatur cliche reprehenderit</i>
-                        </span>
-                    </a>
-                </li>
-                <li data-id="id-15" class="web">
-                    <a href="portfolio_item.html">
-                    	<em class="overflow-hidden"><img src="assets/plugins/portfolioSorting/img/7.jpg" alt="" /></em>
-                        <span>
-                            <strong>Happy New Year</strong>
-                            <i>Anim pariatur cliche reprehenderit</i>
-                        </span>
-                    </a>
-                </li> -->
+                {/foreach}
             </ul>
         </div>
     </div><!--/row-fluid-->
 </div><!--/container-->
-<!--=== End Content Part ===-->
 {include file="Index/footer.html"}

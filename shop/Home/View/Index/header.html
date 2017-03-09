@@ -83,7 +83,7 @@
                             {if $v.two_cate}
                                 <ul class="dropdown-menu">
                                     {foreach $v.two_cate as $i=>$j}
-                                    <li><a href="page_contact.html">{$j.cat_name}</a></li>
+                                    <li><a href="/goods/showlist?cate_id={$j.cat_id}&cate_name={$j.cat_name}">{$j.cat_name}</a></li>
                                     {/foreach}
                                 </ul>
                                 <b class="caret-out"></b>

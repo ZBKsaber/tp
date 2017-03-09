@@ -214,3 +214,422 @@ INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0000s ]
 SQL: SELECT `user_id`,`username` FROM `sw_user` WHERE `username` = '郑保坤' AND `password` = '76d86f7f6f4fde52e601c4123a15da8d' LIMIT 1   [ RunTime:0.0000s ]
 
+[ 2017-03-08T15:14:08+08:00 ] 127.0.0.1 /index.php/home/index/curl
+ERR: 1146:Table 'tpshop.sw_news' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `sw_news`
+
+[ 2017-03-08T15:25:27+08:00 ] 127.0.0.1 /index.php/home/index/curl
+ERR: 1406:Data too long for column 'goods_small_img' at row 1
+ [ SQL语句 ] : INSERT INTO `sw_goods` (`goods_weight`,`goods_price`,`goods_number`,`goods_category_id`,`goods_brand_id`,`goods_create_time`,`goods_name`,`goods_small_img`,`goods_introduce`) VALUES ('100','2000','100','1','0','1488957926','“如意手（剑）“礼花','http://att1.niucdn.com/includes/2016/1028/271728a5f5bdb54f1c37bb86d0ac4282e7922d80.gif\">
+                        </a>
+        </div>
+        <div class=\"topvar-cart\">
+            <div id=\"commMeu\" showCart=\"1\">
+                  
+                    <a href=\"javascript:;\" class=\"nav_a_c\"><i></i>购物车&nbsp;(&nbsp;<span class=\"nums\" id=\"allNums\"></span>&nbsp;)</a>
+                
+                <div class=\"community none\" id=\"community\">
+                    <div class=\"line\"></div>
+                    <div id=\"cartLogin\" class=\"none\">
+                    </div>
+                    <div id=\"cartUnlogin\">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=\"topbar-info\">
+            <div class=\"fl\">
+                <a href=\"http://mall.snail.com/uCenter/searchFlOrder\" class=\"topbar-info-link topbar-info-link-b\">免登录订单查询</a>
+            </div>
+            <div class=\"login notlogin fl\">
+                <a href=\"https://sso.woniu.com/login?service=http%3A%2F%2Fmall.snail.com%2Fsite%2Fticketlogin%3Fgoto%3Dhttp%253A%252F%252Fmobile.snail.com\" class=\"topbar-info-link topbar-info-link-b userlogin\">登录</a>
+                <a href=\"http://mall.snail.com/passport/register/index.html?goto=http%3A%2F%2Fmobile.snail.com%2F\" class=\"topbar-info-link userreg\">注册</a>
+            </div>
+            <div class=\"login_ed haslogin fl none\">
+                <a id=\"username\" href=\"http://mall.snail.com/uCenter\" target=\"_blank\" class=\"lg_edw username topbar-info-link topbar-info-link-b\"></a>
+                <a href=\"#\" class=\"topbar-info-link userlogout\">注销</a>
+            </div>
+	    <div class=\"fl\">
+		<a href=\"javascript:;\" class=\"topbar-info-link topbar-info-link-b\" id=\"topbarOrder\">我的订单</a>
+	    </div>
+        </div>
+    </div>
+</div>	    <div class=\"top-nav boxsd\">
+        <div class=\"site-ct clearfix\">
+                                        <a href=\"http://mall.snail.com\" class=\"logo\">
+                    <img src=\"http://static.snail.com/images/common/free.png','
+         <p class=\"MsoNormal\">
+	【风物志说明】<span></span> 
+</p>
+<p class=\"MsoNormal\">
+	&nbsp; 镔铁杉木为柱，寒铁铸手为刃，会随主人心情想法而变换。东方世家怪才打造而成之奇门兵刃。<span></span> 
+</p>
+<p class=\"MsoNormal\">
+	【风物志技能】<span></span> 
+</p>
+<p class=\"MsoNormal\">
+	如意猜：如意随心（随机变化手势）<span></span> 
+</p>
+【使用说明】<span><br />
+&nbsp; </span>使用“如意手（剑）”礼花后获得烟花效果，系统会赠送一张不绑定如意手（剑）风物志卡牌，使用卡牌后在我的风物志武器界面装备单剑即可。待机动作为好玩的挠后背样子哦！
+    ')
+
+[ 2017-03-08T15:46:02+08:00 ] 127.0.0.1 /index.php/Home/Goods/
+ERR: 模板不存在:D:/wamp64/www/tp/shop/Home/View/Goods/index.html
+
+[ 2017-03-08T15:53:27+08:00 ] 127.0.0.1 /home/goods/showlist
+ERR: 模板不存在:D:/wamp64/www/tp/shop/Home/View/Goods/showlist.html
+
+[ 2017-03-08T15:54:43+08:00 ] 127.0.0.1 /home/goods/assets/plugins/bootstrap/css/bootstrap.min.css
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:54:43+08:00 ] 127.0.0.1 /home/goods/assets/css/style_responsive.css
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:54:43+08:00 ] 127.0.0.1 /home/goods/assets/css/style.css
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:54:43+08:00 ] 127.0.0.1 /home/goods/assets/css/headers/header1.css
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:54:43+08:00 ] 127.0.0.1 /home/goods/assets/plugins/bootstrap/css/bootstrap-responsive.min.css
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:54:43+08:00 ] 127.0.0.1 /home/goods/assets/css/themes/default.css
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:54:43+08:00 ] 127.0.0.1 /home/goods/assets/plugins/font-awesome/css/font-awesome.css
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:54:43+08:00 ] 127.0.0.1 /home/goods/assets/plugins/fancybox/source/jquery.fancybox.css
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:54:43+08:00 ] 127.0.0.1 /home/goods/assets/css/effects.css
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:54:43+08:00 ] 127.0.0.1 /home/goods/assets/css/themes/headers/default.css
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:54:43+08:00 ] 127.0.0.1 /home/goods/assets/js/jquery-1.8.2.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:54:43+08:00 ] 127.0.0.1 /home/goods/assets/js/modernizr.custom.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:54:43+08:00 ] 127.0.0.1 /home/goods/assets/plugins/bootstrap/js/bootstrap.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:54:43+08:00 ] 127.0.0.1 /home/goods/assets/plugins/fancybox/source/jquery.fancybox.pack.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:54:43+08:00 ] 127.0.0.1 /home/goods/assets/plugins/back-to-top.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:54:43+08:00 ] 127.0.0.1 /home/goods/assets/js/app.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:55:15+08:00 ] 127.0.0.1 /home/goods/assets/plugins/back-to-top.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:55:15+08:00 ] 127.0.0.1 /home/goods/assets/js/jquery-1.8.2.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:55:15+08:00 ] 127.0.0.1 /home/goods/assets/plugins/bootstrap/js/bootstrap.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:55:15+08:00 ] 127.0.0.1 /home/goods/assets/js/app.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:55:15+08:00 ] 127.0.0.1 /home/goods/assets/plugins/fancybox/source/jquery.fancybox.pack.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:55:15+08:00 ] 127.0.0.1 /home/goods/assets/js/modernizr.custom.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:59:48+08:00 ] 127.0.0.1 /home/goods/assets/js/jquery-1.8.2.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:59:48+08:00 ] 127.0.0.1 /home/goods/assets/js/modernizr.custom.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:59:48+08:00 ] 127.0.0.1 /home/goods/assets/js/app.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:59:48+08:00 ] 127.0.0.1 /home/goods/assets/plugins/fancybox/source/jquery.fancybox.pack.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:59:48+08:00 ] 127.0.0.1 /home/goods/assets/plugins/back-to-top.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T15:59:48+08:00 ] 127.0.0.1 /home/goods/assets/plugins/bootstrap/js/bootstrap.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:15+08:00 ] 127.0.0.1 /home/goods/assets/js/modernizr.custom.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:15+08:00 ] 127.0.0.1 /home/goods/assets/plugins/bootstrap/js/bootstrap.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:15+08:00 ] 127.0.0.1 /home/goods/assets/js/jquery-1.8.2.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:15+08:00 ] 127.0.0.1 /home/goods/assets/plugins/fancybox/source/jquery.fancybox.pack.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:15+08:00 ] 127.0.0.1 /home/goods/assets/js/app.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:15+08:00 ] 127.0.0.1 /home/goods/assets/plugins/back-to-top.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:16+08:00 ] 127.0.0.1 /home/goods/assets/js/jquery-1.8.2.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:16+08:00 ] 127.0.0.1 /home/goods/assets/js/app.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:16+08:00 ] 127.0.0.1 /home/goods/assets/plugins/fancybox/source/jquery.fancybox.pack.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:16+08:00 ] 127.0.0.1 /home/goods/assets/js/modernizr.custom.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:16+08:00 ] 127.0.0.1 /home/goods/assets/plugins/bootstrap/js/bootstrap.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:16+08:00 ] 127.0.0.1 /home/goods/assets/plugins/back-to-top.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:17+08:00 ] 127.0.0.1 /home/goods/assets/js/modernizr.custom.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:17+08:00 ] 127.0.0.1 /home/goods/assets/plugins/fancybox/source/jquery.fancybox.pack.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:17+08:00 ] 127.0.0.1 /home/goods/assets/js/app.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:17+08:00 ] 127.0.0.1 /home/goods/assets/js/jquery-1.8.2.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:17+08:00 ] 127.0.0.1 /home/goods/assets/plugins/back-to-top.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:17+08:00 ] 127.0.0.1 /home/goods/assets/plugins/bootstrap/js/bootstrap.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:22+08:00 ] 127.0.0.1 /home/goods/assets/js/modernizr.custom.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:22+08:00 ] 127.0.0.1 /home/goods/assets/plugins/back-to-top.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:22+08:00 ] 127.0.0.1 /home/goods/assets/plugins/bootstrap/js/bootstrap.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:22+08:00 ] 127.0.0.1 /home/goods/assets/js/jquery-1.8.2.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:22+08:00 ] 127.0.0.1 /home/goods/assets/plugins/fancybox/source/jquery.fancybox.pack.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:22+08:00 ] 127.0.0.1 /home/goods/assets/js/app.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:41+08:00 ] 127.0.0.1 /home/goods/assets/plugins/bootstrap/js/bootstrap.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:41+08:00 ] 127.0.0.1 /home/goods/assets/js/jquery-1.8.2.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:41+08:00 ] 127.0.0.1 /home/goods/assets/plugins/fancybox/source/jquery.fancybox.pack.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:41+08:00 ] 127.0.0.1 /home/goods/assets/plugins/back-to-top.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:41+08:00 ] 127.0.0.1 /home/goods/assets/js/app.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:02:41+08:00 ] 127.0.0.1 /home/goods/assets/js/modernizr.custom.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:03:06+08:00 ] 127.0.0.1 /home/goods/assets/plugins/fancybox/source/jquery.fancybox.pack.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:03:06+08:00 ] 127.0.0.1 /home/goods/assets/js/jquery-1.8.2.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:03:06+08:00 ] 127.0.0.1 /home/goods/assets/js/modernizr.custom.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:03:06+08:00 ] 127.0.0.1 /home/goods/assets/js/app.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:03:06+08:00 ] 127.0.0.1 /home/goods/assets/plugins/bootstrap/js/bootstrap.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:03:06+08:00 ] 127.0.0.1 /home/goods/assets/plugins/back-to-top.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:03:25+08:00 ] 127.0.0.1 /home/goods/showlist
+ERR: 模板不存在:D:/wamp64/www/tp/shop/Home/View/Goods/showlist.html
+
+[ 2017-03-08T16:03:53+08:00 ] 127.0.0.1 /home/goods/assets/plugins/back-to-top.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:03:53+08:00 ] 127.0.0.1 /home/goods/assets/plugins/bootstrap/js/bootstrap.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:03:53+08:00 ] 127.0.0.1 /home/goods/assets/js/modernizr.custom.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:03:53+08:00 ] 127.0.0.1 /home/goods/assets/js/app.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:03:53+08:00 ] 127.0.0.1 /home/goods/assets/plugins/fancybox/source/jquery.fancybox.pack.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:03:53+08:00 ] 127.0.0.1 /home/goods/assets/js/jquery-1.8.2.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:05:18+08:00 ] 127.0.0.1 /home/goods/assets/js/jquery-1.8.2.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:05:18+08:00 ] 127.0.0.1 /home/goods/assets/plugins/bootstrap/js/bootstrap.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:05:18+08:00 ] 127.0.0.1 /home/goods/assets/js/app.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:05:18+08:00 ] 127.0.0.1 /home/goods/assets/plugins/back-to-top.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:05:18+08:00 ] 127.0.0.1 /home/goods/assets/plugins/fancybox/source/jquery.fancybox.pack.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:05:18+08:00 ] 127.0.0.1 /home/goods/assets/js/modernizr.custom.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:05:30+08:00 ] 127.0.0.1 /home/goods/
+ERR: 模板不存在:D:/wamp64/www/tp/shop/Home/View/Goods/index.html
+
+[ 2017-03-08T16:05:34+08:00 ] 127.0.0.1 /home/goods/assets/js/modernizr.custom.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:05:34+08:00 ] 127.0.0.1 /home/goods/assets/js/app.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:05:34+08:00 ] 127.0.0.1 /home/goods/assets/js/jquery-1.8.2.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:05:34+08:00 ] 127.0.0.1 /home/goods/assets/plugins/back-to-top.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:05:34+08:00 ] 127.0.0.1 /home/goods/assets/plugins/fancybox/source/jquery.fancybox.pack.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:05:34+08:00 ] 127.0.0.1 /home/goods/assets/plugins/bootstrap/js/bootstrap.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:05:40+08:00 ] 127.0.0.1 /home/goods/assets/js/jquery-1.8.2.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:05:40+08:00 ] 127.0.0.1 /home/goods/assets/plugins/bootstrap/js/bootstrap.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:05:40+08:00 ] 127.0.0.1 /home/goods/assets/plugins/fancybox/source/jquery.fancybox.pack.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:05:40+08:00 ] 127.0.0.1 /home/goods/assets/plugins/back-to-top.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:05:40+08:00 ] 127.0.0.1 /home/goods/assets/js/modernizr.custom.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:05:40+08:00 ] 127.0.0.1 /home/goods/assets/js/app.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:20+08:00 ] 127.0.0.1 /home/goods/assets/plugins/bootstrap/css/bootstrap.min.css
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:20+08:00 ] 127.0.0.1 /home/goods/assets/plugins/portfolioSorting/css/sorting.css
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:20+08:00 ] 127.0.0.1 /home/goods/assets/css/style.css
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:20+08:00 ] 127.0.0.1 /home/goods/assets/css/headers/header1.css
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:20+08:00 ] 127.0.0.1 /home/goods/assets/js/jquery-1.8.2.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:20+08:00 ] 127.0.0.1 /home/goods/assets/css/themes/default.css
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:20+08:00 ] 127.0.0.1 /home/goods/assets/plugins/font-awesome/css/font-awesome.css
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:20+08:00 ] 127.0.0.1 /home/goods/assets/css/themes/headers/default.css
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:20+08:00 ] 127.0.0.1 /home/goods/assets/css/style_responsive.css
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:20+08:00 ] 127.0.0.1 /home/goods/assets/plugins/bootstrap/css/bootstrap-responsive.min.css
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:20+08:00 ] 127.0.0.1 /home/goods/assets/js/modernizr.custom.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:20+08:00 ] 127.0.0.1 /home/goods/assets/plugins/portfolioSorting/js/jquery.quicksand.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:20+08:00 ] 127.0.0.1 /home/goods/assets/plugins/bootstrap/js/bootstrap.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:20+08:00 ] 127.0.0.1 /home/goods/assets/plugins/portfolioSorting/js/sorting.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:20+08:00 ] 127.0.0.1 /home/goods/assets/plugins/back-to-top.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:20+08:00 ] 127.0.0.1 /home/goods/assets/js/app.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:54+08:00 ] 127.0.0.1 /home/goods/assets/plugins/bootstrap/js/bootstrap.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:54+08:00 ] 127.0.0.1 /home/goods/assets/plugins/portfolioSorting/js/sorting.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:54+08:00 ] 127.0.0.1 /home/goods/assets/js/modernizr.custom.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:54+08:00 ] 127.0.0.1 /home/goods/assets/plugins/portfolioSorting/js/jquery.quicksand.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:54+08:00 ] 127.0.0.1 /home/goods/assets/js/app.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:54+08:00 ] 127.0.0.1 /home/goods/assets/js/jquery-1.8.2.min.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:06:54+08:00 ] 127.0.0.1 /home/goods/assets/plugins/back-to-top.js
+ERR: 非法操作:assets
+
+[ 2017-03-08T16:11:11+08:00 ] 127.0.0.1 /home/goods/
+ERR: 模板不存在:D:/wamp64/www/tp/shop/Home/View/Goods/index.html
+
+[ 2017-03-08T16:21:19+08:00 ] 127.0.0.1 /home/goods/portfolio_item.html
+ERR: 非法操作:portfolio_item
+
+[ 2017-03-08T16:35:05+08:00 ] 127.0.0.1 /goods/showlist?cate=2
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array ) LIMIT 20' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_goods` WHERE ( goods_category_id in Array ) LIMIT 20  
+
+[ 2017-03-08T16:35:18+08:00 ] 127.0.0.1 /goods/showlist?cate=2
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'inArray ) LIMIT 20' at line 1
+ [ SQL语句 ] : SELECT * FROM `sw_goods` WHERE ( goods_category_id inArray ) LIMIT 20  
+
