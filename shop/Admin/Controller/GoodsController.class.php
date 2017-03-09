@@ -38,7 +38,7 @@ class GoodsController extends AdminController {
         // 获取商品
         $info = D('Goods')->select();
         // 获取数据表中所有的分类
-        $cate = D("Category") -> select();
+        $cate = D("Category") -> cateInit();
         // 把分类id和分类名单独做成一个数组
         $data = array();$data['0'] = '顶级分类';
         foreach ($cate as $k => $v) {
@@ -118,12 +118,7 @@ class GoodsController extends AdminController {
             }
         }else{
             // 获取数据表中所有的分类
-            $info = D("Category") -> select();
-            foreach ($info as $k => &$v) {
-                $count = substr_count($v['path'],',');
-                $v['cat_name'] = str_repeat('--/',$count).$v['cat_name'];
-            }
-            // var_dump($info);exit;
+            $info = $this -> getCategory();
             // 把获取的权限信息传递给模板
             $this -> assign('info',$info);
             $this->display();
@@ -148,11 +143,7 @@ class GoodsController extends AdminController {
             $data = $goods -> create();
             if ($data == false) {
                 // 获取数据表中所有的分类
-                $cate = D("Category") -> select();
-                foreach ($cate as $k => &$v) {
-                    $count = substr_count($v['path'],',');
-                    $v['cat_name'] = str_repeat('--/',$count).$v['cat_name'];
-                }
+                $cate = $this -> getCategory();
                 $this -> assign('info',$_POST);
                 $this -> assign('cate',$cate);
                 $this -> assign('errorInfo',$goods -> getError());
@@ -177,11 +168,7 @@ class GoodsController extends AdminController {
             $info = $goods -> find($goods_id);
 
             // 获取数据表中所有的分类
-            $cate = D("Category") -> select();
-            foreach ($cate as $k => &$v) {
-                $count = substr_count($v['path'],',');
-                $v['cat_name'] = str_repeat('--/',$count).$v['cat_name'];
-            }
+            $cate = $this -> getCategory();
 
             $this->assign('info',$info);
             $this->assign('cate',$cate);
@@ -191,7 +178,7 @@ class GoodsController extends AdminController {
 
     public function category(){
         // 获取数据表中所有的分类
-        $info = D("Category") -> select();
+        $info = D("Category") -> catInit();
         // 把分类id和分类名单独做成一个数组
         $data = array();$data['0'] = '顶级分类';
         foreach ($info as $k => &$v) {
@@ -203,6 +190,30 @@ class GoodsController extends AdminController {
         $this -> assign('data',$data);
         $this -> display();
     }
+
+    /**
+     * 添加分类
+     */
+     public function cateAdd(){
+         if ($_POST) {
+            // 自动验证数据
+            $res = D('Category') -> create($_POST);
+            // echo 'aaa';exit;
+            if ($res == false) {
+                $error = '';
+                foreach (D('Category')->getError() as $k => $v) {
+                    $error .= $v.'<br>';
+                }
+                return show(0,$error);
+            }
+            return '成功';
+        }else{
+            // 获取数据表中所有的分类
+            $info = $this -> getCategory();
+            $this -> assign('info',$info);
+            $this -> display();
+        }
+     }
 
     /**
      * 判断是否有图片上传
@@ -240,7 +251,7 @@ class GoodsController extends AdminController {
       */
       public function getCategory(){
           // 获取数据表中所有的分类
-          $cate = D("Category") -> select();
+          $cate = D("Category") -> catInit();
           foreach ($cate as $k => &$v) {
               $count = substr_count($v['path'],',');
               $v['cat_name'] = str_repeat('--/',$count).$v['cat_name'];

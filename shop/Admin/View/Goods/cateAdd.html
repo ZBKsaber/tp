@@ -1,0 +1,48 @@
+{extends file="base.html"}
+{block name="section"}
+       <div class="row">
+           <div class="col-lg-12">
+               <h1 class="page-header">添加分类</h1>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col-lg-12">
+               <div class="panel panel-default">
+                   <div class="panel-heading">
+                      添加分类
+                   </div>
+                   <div class="panel-body">
+                       <div class="row">
+                           <div class="col-lg-6">
+                               <form id="cms_form" role="form" ac="{$smarty.const.__SELF__}">
+                                   <div class="form-group">
+                                       <label>分类名称</label>
+                                       <input class="form-control" name="cat_name" value="{$post.cat_name}">
+                                       <span class="text-danger">{$errorInfo.cat_name}</span>
+                                   </div>
+                                   <div class="form-group">
+                                       <label>所属分类</label>
+                                       <select name="pid" class="form-control">
+                                            <option value="0">顶级分类</option>
+                                            {foreach $info as $k=>$v}
+                                            <option value="{$v.cat_id}">{$v.cat_name}</option>
+                                            {/foreach}
+                                        </select>
+                                        <span class="text-danger">{$errorInfo.pid}</span>
+                                   </div>
+                                   <div class="form-group">
+                                       <label>是否在导航显示</label>
+                                       <input type="radio" name="status" value="1" checked> 显示
+                                       <input type="radio" name="status" value="0"> 不显示
+                                        <span class="text-danger">{$errorInfo.status}</span>
+                                   </div>
+                                   <button id="tijiao" type="button" class="btn btn-default">添加</button>
+                                   <button type="reset" class="btn btn-default">重置</button>
+                               </form>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+{/block}
