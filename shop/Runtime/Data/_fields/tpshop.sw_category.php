@@ -1,1 +1,0 @@
-a:7:{i:0;s:6:"cat_id";i:1;s:8:"cat_name";i:2;s:3:"pid";i:3;s:4:"path";i:4;s:6:"status";s:3:"_pk";s:6:"cat_id";s:5:"_type";a:5:{s:6:"cat_id";s:7:"int(11)";s:8:"cat_name";s:11:"varchar(64)";s:3:"pid";s:16:"int(11) unsigned";s:4:"path";s:12:"varchar(255)";s:6:"status";s:10:"tinyint(1)";}}

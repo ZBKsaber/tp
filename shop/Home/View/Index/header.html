@@ -12,6 +12,9 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
+
+
+
     <!-- CSS Global Compulsory-->
     <link rel="stylesheet" href="{$smarty.const.PLUGINS_URL}bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="{$smarty.const.CSS_URL}style.css" />
@@ -21,11 +24,13 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="{$smarty.const.PLUGINS_URL}font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="{$smarty.const.PLUGINS_URL}bxslider/jquery.bxslider.css" />
     <link rel="stylesheet" href="{$smarty.const.PLUGINS_URL}portfolioSorting/css/sorting.css" />
     <link rel="stylesheet" href="{$smarty.const.PLUGINS_URL}flexslider/flexslider.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="{$smarty.const.PLUGINS_URL}parallax-slider/css/parallax-slider.css" type="text/css" />
     <!-- CSS Theme -->
     <link rel="stylesheet" href="{$smarty.const.CSS_URL}themes/default.css" id="style_color" />
+    <!-- <link rel="stylesheet" href="{$smarty.const.CSS_URL}themes/headers/default.css" id="style_color-header-1" /> -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
 
 <body>
@@ -48,6 +53,8 @@
         <ul class="loginbar pull-right">
             {if session('user_name')}
                 <li>欢迎您 {session('user_name')}</li>
+                <li class="devider">&nbsp;</li>
+                <li><a href="{$smarty.const.__MODULE__}/user/quit">退出</a></li>
             {else}
                 <li><a href="{$smarty.const.__MODULE__}/user/register" class="login-btn">注册</a></li>
                 <li class="devider">&nbsp;</li>

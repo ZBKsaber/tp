@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-07 11:05:04
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-09 15:50:16
          compiled from "D:/wamp64/www/tp/shop/Home/View\Index\index.html" */ ?>
-<?php /*%%SmartyHeaderCode:220958be236069b509-87779633%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1890058c10938f07912-36860767%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,15 +11,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '220958be236069b509-87779633',
+  'nocache_hash' => '1890058c10938f07912-36860767',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_58be2360b0448',
+  'unifunc' => 'content_58c1093944d8a',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58be2360b0448')) {function content_58be2360b0448($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("Index/header.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
+<?php if ($_valid && !is_callable('content_58c1093944d8a')) {function content_58c1093944d8a($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("Index/header.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 <!--=== Slider ===-->
 <div class="slider-inner">

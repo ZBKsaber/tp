@@ -76,4 +76,13 @@ class UserController extends Controller {
             $this->display();
         }
     }
+    /**
+     * 退出登录
+     */
+     public function quit(){
+         // 清除用户session
+         session('user_name',null);
+         session('user_id',null);
+         $this -> redirect('/',array(),0);
+     }
 }

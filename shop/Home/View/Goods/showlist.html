@@ -13,7 +13,7 @@
         <div id="w">
             <div class="sort" id="sort">
 				<ul class="unstyled inline">
-                	<li><a href="#" class="all selected">所有</a></li>
+                	<li><a href="#" class="all selected">所有分类</a></li>
                     {foreach $cate as $k=>$v}
                 	<li><a href="#" class="{$v.cat_name}">{$v.cat_name}</a></li>
                     {/foreach}
@@ -23,7 +23,7 @@
             <ul class="portfolio recent-work clearfix">
                 {foreach $goods as $k=>$v}
                 <li data-id="id-{$v.goods_id}" class="{$v.cat_name}">
-                    <a href="portfolio_item.html">
+                    <a href="{$smarty.const.__CONTROLLER__}/detail?goods_id={$v.goods_id}">
                     	<em class="overflow-hidden"><img style="width:270px;height:117px;" src="{$v.goods_small_img}" alt="" /></em>
                         <span>
                             <strong>{$v.goods_name}</strong>

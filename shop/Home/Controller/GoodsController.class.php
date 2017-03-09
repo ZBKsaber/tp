@@ -12,7 +12,8 @@ class GoodsController extends Controller {
         // 查询所有在该分类下的子分类
         $cate = D('Category')->where('pid='.$cateId)->field('cat_id,cat_name')->select();
         if (!$cate) {
-            echo "<script>alert('暂无分类');</script>";return;
+            echo "<script>alert('暂无分类');</script>";
+            return $this->redirect('/',array(),0);
         }
         // 获取子分类的id数组
         $arr = array();
@@ -38,6 +39,18 @@ class GoodsController extends Controller {
 
     // 商品详情
     public function detail(){
+        // 获取当前要查询的商品的id值
+        $goods_id = intval(trim($_GET['goods_id']));
+        // 通过id查询商品
+        $goods = D('Goods') -> find($goods_id);
+        if (!$goods || !isset($goods)) {
+            // 如果查询不到商品,跳到首页
+            return $this->redirect('/',array(),0);
+        }
+        // 获取八个最新的商品当做展示
+        $newGoods = D('Goods') -> order('goods_id desc') -> limit(8) -> select();
+        $this -> assign('goods',$goods);
+        $this -> assign('newGoods',$newGoods);
         $this->display();
     }
 }
