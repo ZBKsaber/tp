@@ -13,3 +13,9 @@ ERR: 1064:You have an error in your SQL syntax; check the manual that correspond
 ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 20' at line 1
  [ SQL语句 ] : SELECT * FROM `sw_goods` WHERE `goods_category_id` IN () LIMIT 20  
 
+[ 2017-03-09T10:30:38+08:00 ] 127.0.0.1 /goods/index.html
+ERR: 模板不存在:D:/wamp64/www/tp/shop/Home/View/Goods/index.html
+
+[ 2017-03-09T10:31:12+08:00 ] 127.0.0.1 /goods/index.html
+ERR: 模板不存在:D:/wamp64/www/tp/shop/Home/View/Goods/index.html
+
