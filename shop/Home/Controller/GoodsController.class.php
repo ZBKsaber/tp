@@ -12,8 +12,7 @@ class GoodsController extends Controller {
         // 查询所有在该分类下的子分类
         $cate = D('Category')->where('pid='.$cateId)->field('cat_id,cat_name')->select();
         if (!$cate) {
-            echo "<script>alert('暂无分类');</script>";
-            return $this->redirect('/',array(),0);
+            return $this->error('暂无商品','',1);
         }
         // 获取子分类的id数组
         $arr = array();

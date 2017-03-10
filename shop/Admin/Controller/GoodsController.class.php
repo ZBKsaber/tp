@@ -38,7 +38,7 @@ class GoodsController extends AdminController {
         // 获取商品
         $info = D('Goods')->select();
         // 获取数据表中所有的分类
-        $cate = D("Category") -> cateInit();
+        $cate = $this -> getCategory();
         // 把分类id和分类名单独做成一个数组
         $data = array();$data['0'] = '顶级分类';
         foreach ($cate as $k => $v) {
