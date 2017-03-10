@@ -20,9 +20,13 @@ class CategoryModel extends Model{
     private $_db = '';
 
     public function __construct(){
+        parent::__construct();
         $this -> _db = M('Category');
     }
 
+    public function select(){
+        return $this -> _db -> select();
+    }
     public function catInit(){
         // 因为模板有排序功能,所以后台排序用处不大
         return $this -> _db -> where('status != -1')

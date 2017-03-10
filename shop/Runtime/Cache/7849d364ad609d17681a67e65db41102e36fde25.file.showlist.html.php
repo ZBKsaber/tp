@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-09 16:07:01
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-10 09:12:19
          compiled from "D:/wamp64/www/tp/shop/Home/View\Goods\showlist.html" */ ?>
 <?php /*%%SmartyHeaderCode:1420558c1093eb401a2-07293450%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7849d364ad609d17681a67e65db41102e36fde25' => 
     array (
       0 => 'D:/wamp64/www/tp/shop/Home/View\\Goods\\showlist.html',
-      1 => 1489046819,
+      1 => 1489047197,
       2 => 'file',
     ),
   ),
@@ -33,11 +33,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<div class="container">
         <h1 class="color-green pull-left"><?php echo $_smarty_tpl->tpl_vars['catename']->value;?>
 </h1>
-    </div><!--/container-->
-</div><!--/breadcrumbs-->
-<!--=== End Breadcrumbs ===-->
-
-<!--=== Content Part ===-->
+    </div>
+</div>
 <div class="container">
 	<div class="row-fluid">
         <div id="w">
@@ -85,8 +82,8 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
                 <?php } ?>
             </ul>
         </div>
-    </div><!--/row-fluid-->
-</div><!--/container-->
+    </div>
+</div>
 <?php echo $_smarty_tpl->getSubTemplate ("Index/footer.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 <?php }} ?>

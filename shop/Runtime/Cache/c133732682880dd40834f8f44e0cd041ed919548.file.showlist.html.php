@@ -1,13 +1,13 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-03-10 09:11:02
-         compiled from "D:/wamp64/www/tp/shop/Admin/View\Goods\category.html" */ ?>
-<?php /*%%SmartyHeaderCode:2915158c10e6ac96cf6-69805387%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.6, created on 2017-03-10 09:12:45
+         compiled from "D:/wamp64/www/tp/shop/Admin/View\Role\showlist.html" */ ?>
+<?php /*%%SmartyHeaderCode:51858c1fd8d097f11-23177531%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'd4e534a49ccaf4fa0d12ac68bbe9d49ebbd68449' => 
+    'c133732682880dd40834f8f44e0cd041ed919548' => 
     array (
-      0 => 'D:/wamp64/www/tp/shop/Admin/View\\Goods\\category.html',
-      1 => 1489108261,
+      0 => 'D:/wamp64/www/tp/shop/Admin/View\\Role\\showlist.html',
+      1 => 1488790610,
       2 => 'file',
     ),
     '04201239d7d4eafa981430d32045b04705f85800' => 
@@ -17,20 +17,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2915158c10e6ac96cf6-69805387',
+  'nocache_hash' => '51858c1fd8d097f11-23177531',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_58c10e6b032fa',
   'variables' => 
   array (
     'v' => 0,
     'vv' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_58c1fd8d33fab',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58c10e6b032fa')) {function content_58c10e6b032fa($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58c1fd8d33fab')) {function content_58c1fd8d33fab($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -124,18 +124,14 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
             
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">商品分类</h1>
+            <h1 class="page-header">角色列表</h1>
         </div>
     </div>
     <div class="row">
         <div class="col-lg-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    商品分类
-                <a href="<?php echo @__CONTROLLER__;?>
-/cateAdd">
-                    <button type="button" class="btn btn-info btn-sm">添加分类</button>
-                </a>
+                    角色列表
                 </div>
                 <div class="panel-body">
                     <div class="dataTable_wrapper">
@@ -143,10 +139,9 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
                             <thead>
                                 <tr>
                                     <th>序号</th>
-                                    <th>分类名称</th>
-                                    <th>父级分类</th>
-                                    <th>全路径</th>
-                                    <th>状态</th>
+                                    <th>角色名称</th>
+                                    <th>权限ids</th>
+                                    <th>权限控制器/操作方法</th>
                                     <th>操作</th>
                                 </tr>
                             </thead>
@@ -154,26 +149,22 @@ $_smarty_tpl->tpl_vars['vv']->_loop = true;
                             <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
  $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['info']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
- $_smarty_tpl->tpl_vars['v']->iteration=0;
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
 $_smarty_tpl->tpl_vars['v']->_loop = true;
  $_smarty_tpl->tpl_vars['k']->value = $_smarty_tpl->tpl_vars['v']->key;
- $_smarty_tpl->tpl_vars['v']->iteration++;
 ?>
                                 <tr class="gradeU">
-                                    <td><?php echo $_smarty_tpl->tpl_vars['v']->value['cat_id'];?>
+                                    <td><?php echo $_smarty_tpl->tpl_vars['v']->value['role_id'];?>
 </td>
-                                    <td><?php echo $_smarty_tpl->tpl_vars['v']->value['cat_name'];?>
+                                    <td><?php echo $_smarty_tpl->tpl_vars['v']->value['role_name'];?>
 </td>
-                                    <td><?php echo $_smarty_tpl->tpl_vars['data']->value[$_smarty_tpl->tpl_vars['v']->value['pid']];?>
+                                    <td><?php echo $_smarty_tpl->tpl_vars['v']->value['role_auth_ids'];?>
 </td>
-                                    <td><?php echo $_smarty_tpl->tpl_vars['v']->value['fullpath'];?>
-</td>
-                                    <td><?php echo Status($_smarty_tpl->tpl_vars['v']->value['status']);?>
+                                    <td><?php echo $_smarty_tpl->tpl_vars['v']->value['role_auth_ac'];?>
 </td>
                                     <td class="center"><a href="<?php echo @__CONTROLLER__;?>
-/upd/goods_id/<?php echo $_smarty_tpl->tpl_vars['v']->value['goods_id'];?>
-">更新</a>|<a href="#">删除</a></td>
+/distribute/role_id/<?php echo $_smarty_tpl->tpl_vars['v']->value['role_id'];?>
+">分配权限</a> | <a href="">更新</a> | <a href="">删除</a></td>
                                 </tr>
                             <?php } ?>
                             </tbody>
@@ -199,10 +190,7 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 /metisMenu/dist/metisMenu.min.js"></script>
 
     
-    <!-- DataTables JavaScript -->
-    <script src="<?php echo @BOWER_URL;?>
-/datatables/media/js/jquery.dataTables.js"></script>
-    
+
     <script src="<?php echo @BOWER_URL;?>
 /datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
 

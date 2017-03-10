@@ -1,0 +1,212 @@
+[ 2017-03-10T08:58:19+08:00 ] 127.0.0.1 /index.php/Admin/Manager/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_manager` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_manager` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_role` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_role` WHERE `role_id` = 100 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_manager` WHERE `mg_name` = 'admin' AND `mg_pwd` = 'a66abb5684c45962d887564f08346e8d' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-10T08:58:28+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cateAdd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_manager` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_manager` WHERE `mg_id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_role` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::select() should be compatible with Think\Model::select($options = Array) D:\wamp64\www\tp\shop\Admin\Model\CategoryModel.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-10T08:58:34+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cateAdd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sw_manager` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_manager` WHERE `mg_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_role` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::select() should be compatible with Think\Model::select($options = Array) D:\wamp64\www\tp\shop\Admin\Model\CategoryModel.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-10T09:00:32+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cateAdd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sw_manager` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_manager` WHERE `mg_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_role` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::select() should be compatible with Think\Model::select($options = Array) D:\wamp64\www\tp\shop\Admin\Model\CategoryModel.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sw_category` WHERE `cat_name` = '家用电器' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-10T09:00:37+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cateAdd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_manager` WHERE `mg_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_role` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::select() should be compatible with Think\Model::select($options = Array) D:\wamp64\www\tp\shop\Admin\Model\CategoryModel.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sw_category` WHERE `cat_name` = '家用电器' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-10T09:01:08+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cateAdd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_manager` WHERE `mg_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_role` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::select() should be compatible with Think\Model::select($options = Array) D:\wamp64\www\tp\shop\Admin\Model\CategoryModel.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sw_category` WHERE `cat_name` = '家用电器' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-10T09:01:33+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cateAdd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sw_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_manager` WHERE `mg_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_role` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::select() should be compatible with Think\Model::select($options = Array) D:\wamp64\www\tp\shop\Admin\Model\CategoryModel.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sw_category` WHERE `cat_name` = '苹果手机' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-10T09:01:39+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cateAdd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_manager` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_manager` WHERE `mg_id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_role` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::select() should be compatible with Think\Model::select($options = Array) D:\wamp64\www\tp\shop\Admin\Model\CategoryModel.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sw_category` WHERE `cat_name` = '苹果手机' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-10T09:02:33+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cateAdd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_manager` WHERE `mg_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_role` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::select() should be compatible with Think\Model::select($options = Array) D:\wamp64\www\tp\shop\Admin\Model\CategoryModel.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sw_category` WHERE `cat_name` = '苹果手机' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-10T09:07:53+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cateAdd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_manager` WHERE `mg_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_role` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::select() should be compatible with Think\Model::select($options = Array) D:\wamp64\www\tp\shop\Admin\Model\CategoryModel.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sw_category` WHERE `cat_name` = 'aaa' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `sw_category` WHERE `cat_id` = 46798798 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-10T09:08:32+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cateAdd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `sw_manager` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_manager` WHERE `mg_id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_role` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::select() should be compatible with Think\Model::select($options = Array) D:\wamp64\www\tp\shop\Admin\Model\CategoryModel.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sw_category` WHERE `cat_name` = '苹果手机' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `sw_category` WHERE `cat_id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-10T09:09:00+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cateAdd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sw_manager` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_manager` WHERE `mg_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_role` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::select() should be compatible with Think\Model::select($options = Array) D:\wamp64\www\tp\shop\Admin\Model\CategoryModel.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sw_category` WHERE `cat_name` = '苹果手机' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `sw_category` WHERE `cat_id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-10T09:09:44+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cateAdd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_manager` WHERE `mg_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_role` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::select() should be compatible with Think\Model::select($options = Array) D:\wamp64\www\tp\shop\Admin\Model\CategoryModel.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sw_category` WHERE `cat_name` = '苹果手机' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `sw_category` WHERE `cat_id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sw_category` (`cat_name`,`pid`,`status`,`path`) VALUES ('苹果手机','6','1','0,6') [ RunTime:0.0490s ]
+
+[ 2017-03-10T09:11:54+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cateAdd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sw_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_manager` WHERE `mg_id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_role` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Admin\Model\CategoryModel::select() should be compatible with Think\Model::select($options = Array) D:\wamp64\www\tp\shop\Admin\Model\CategoryModel.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sw_category` WHERE `cat_name` = '三星手机' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `sw_category` WHERE `cat_id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sw_category` (`cat_name`,`pid`,`status`,`path`) VALUES ('三星手机','6','1','0,6') [ RunTime:0.0450s ]
+

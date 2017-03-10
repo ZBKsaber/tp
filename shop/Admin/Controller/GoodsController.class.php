@@ -206,7 +206,20 @@ class GoodsController extends AdminController {
                 }
                 return show(0,$error);
             }
-            return '成功';
+            // 检测父级分类是否存在
+            $pCat = D('Category') -> find($res['pid']);
+            if (!$pCat || !isset($pCat)) {
+                return show(0,'父级分类不存在');
+            }
+            // 获取要添加的分类的path值
+            $res['path'] = $pCat['path'].','.$res['pid'];
+            // var_dump($res);exit;
+            // 验证通过,进行数据库写入
+            $info = D('Category') -> add($res);
+            if (!$info) {
+                return show(0,'添加失败');
+            }
+            return show(1,'添加成功',array('jumpUrl'=>'category'));
         }else{
             // 获取数据表中所有的分类
             $info = $this -> getCategory();
